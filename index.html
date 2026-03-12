@@ -1677,13 +1677,10 @@ function validateFreeCode(){
 
 /* ==================== AI INTEGRATION ==================== */
 async function callAI(prompt, isShort){
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
+  const response = await fetch("/api/ai", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-api-key": CFG.KEY,
-      "anthropic-version": "2023-06-01",
-      "anthropic-dangerous-direct-browser-access": "true"
     },
     body: JSON.stringify({
       model: "claude-sonnet-4-6",
@@ -1868,13 +1865,10 @@ async function sendChat(){
   const messages = [{role:'user', content: systemPrompt + '\n\nConversation so far:\n' + chatHistory.map(m=>`${m.role}: ${m.content}`).join('\n') + '\n\nRespond as the friend:'}];
 
   try {
-    const response = await fetch("https://api.anthropic.com/v1/messages", {
+    const response = await fetch("/api/ai", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-api-key": CFG.KEY,
-        "anthropic-version": "2023-06-01",
-        "anthropic-dangerous-direct-browser-access": "true"
       },
       body: JSON.stringify({
         model: "claude-sonnet-4-6",
