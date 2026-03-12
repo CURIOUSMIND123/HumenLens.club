@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HumanLens — AI Life Tools That Don't Sugarcoat It</title>
+<meta name="description" content="AI-powered life tools for layoff risk, salary truth, relationship health, burnout, debt traps, and more. No sugarcoating. Real answers.">
+<meta property="og:title" content="HumanLens — AI Life Tools That Don't Sugarcoat It">
+<meta property="og:description" content="Get brutally honest AI analysis of your life situations. Layoff risk, salary truth, relationship health, burnout level and more.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://humanlens.co">
+<meta property="og:image" content="img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HumanLens — AI Life Tools That Don't Sugarcoat It">
+<meta name="twitter:description" content="Get brutally honest AI analysis of your life situations.">
+<meta name="twitter:image" content="img/hero.jpg">
+<link rel="canonical" href="https://humanlens.co">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@900&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "creator": {"@type": "SoftwareApplication", "name": "Perplexity Computer", "url": "https://www.perplexity.ai/computer"},
+  "mainEntity": [
+    {"@type": "Question", "name": "What is HumanLens?", "acceptedAnswer": {"@type": "Answer", "text": "HumanLens is an AI-powered life tools platform that gives you brutally honest analysis of your real-life situations — from layoff risk and salary gaps to relationship health and burnout levels."}},
+    {"@type": "Question", "name": "How much does HumanLens cost?", "acceptedAnswer": {"@type": "Answer", "text": "Most HumanLens tools cost just $1 for a full report. Premium tools like Tariff Impact, Visa Roadmap, and Toxic Workplace analysis cost $2. You get a free AI-generated preview before paying."}},
+    {"@type": "Question", "name": "Is my data safe with HumanLens?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. HumanLens processes your data in real-time with AI and does not store your personal information on any server. Your data is used only to generate your report."}},
+    {"@type": "Question", "name": "How accurate are HumanLens reports?", "acceptedAnswer": {"@type": "Answer", "text": "HumanLens uses advanced AI to provide personalized insights based on your specific situation. While not a substitute for professional advice, our reports have a 4.8/5 average rating from users across 38 countries."}}
+  ]
+}
+</script>
+
+<style>
+/* ==================== RESET & BASE ==================== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:'JetBrains Mono',monospace;
+  background:#05050D;
+  color:#e0e0e0;
+  overflow-x:hidden;
+  cursor:none;
+  line-height:1.6;
+  font-weight:400;
+  font-size:14px;
+}
+a{color:inherit;text-decoration:none}
+button{cursor:none;font-family:inherit;border:none;background:none;color:inherit}
+input,textarea,select{font-family:'JetBrains Mono',monospace;background:rgba(255,255,255,.04);border:2px solid rgba(255,255,255,.06);color:#e0e0e0;border-radius:8px;padding:10px 14px;font-size:13px;outline:none;transition:border-color .3s}
+input:focus,textarea:focus,select:focus{border-color:rgba(255,255,255,.2)}
+select option{background:#12121f;color:#e0e0e0}
+textarea{resize:vertical;min-height:60px}
+img{max-width:100%;display:block}
+::selection{background:#CC44FF;color:#fff}
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:#05050D}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.1);border-radius:3px}
+
+/* ==================== HALFTONE OVERLAY ==================== */
+body::before{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  background:radial-gradient(circle,rgba(255,255,255,.03) 1px,transparent 1px);
+  background-size:18px 18px;
+  pointer-events:none;z-index:0;
+}
+
+/* ==================== COLOR EXPLOSIONS ==================== */
+body::after{
+  content:'';position:fixed;top:0;left:0;width:100%;height:100%;
+  background:
+    radial-gradient(ellipse 600px 600px at 10% 20%,rgba(255,51,85,.04),transparent),
+    radial-gradient(ellipse 500px 500px at 80% 40%,rgba(204,68,255,.03),transparent),
+    radial-gradient(ellipse 700px 700px at 50% 80%,rgba(59,130,246,.03),transparent);
+  pointer-events:none;z-index:0;
+}
+
+/* ==================== CUSTOM CURSOR ==================== */
+.cursor-dot{
+  position:fixed;width:8px;height:8px;background:#fff;border-radius:50%;
+  pointer-events:none;z-index:99999;mix-blend-mode:difference;
+  transform:translate(-50%,-50%);transition:width .2s,height .2s;
+}
+.cursor-ring{
+  position:fixed;width:28px;height:28px;border:1.5px solid rgba(255,255,255,.5);
+  border-radius:50%;pointer-events:none;z-index:99998;
+  transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s;
+}
+.cursor-dot.hover{width:14px;height:14px}
+.cursor-ring.hover{width:44px;height:44px;border-color:rgba(255,255,255,.8)}
+
+/* ==================== TOAST ==================== */
+.toast{
+  position:fixed;bottom:30px;left:50%;transform:translateX(-50%) translateY(100px);
+  background:rgba(18,18,31,.95);border:2px solid rgba(255,255,255,.1);
+  padding:14px 28px;border-radius:12px;font-size:13px;z-index:9999;
+  backdrop-filter:blur(20px);transition:transform .5s cubic-bezier(.34,1.56,.64,1);
+  white-space:nowrap;
+}
+.toast.show{transform:translateX(-50%) translateY(0)}
+
+/* ==================== NAV ==================== */
+.nav{
+  position:fixed;top:0;left:0;width:100%;z-index:1000;
+  padding:14px 32px;display:flex;align-items:center;justify-content:space-between;
+  backdrop-filter:blur(20px);background:rgba(5,5,13,.7);
+  border-bottom:1px solid rgba(255,255,255,.04);
+}
+.nav-logo{display:flex;align-items:center;gap:10px;font-family:'Syne',sans-serif;font-weight:900;font-size:18px;color:#fff}
+.nav-dot{width:8px;height:8px;background:#00E5A0;border-radius:50%;animation:glowPulse 2s ease infinite}
+.nav-beta{
+  font-family:'JetBrains Mono',monospace;font-size:9px;font-weight:700;
+  background:rgba(255,255,255,.08);padding:2px 8px;border-radius:4px;
+  letter-spacing:2px;color:rgba(255,255,255,.5);
+}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.5);transition:color .3s}
+.nav-links a:hover{color:#fff}
+.nav-cta{
+  font-size:12px;font-weight:600;padding:8px 20px;border-radius:8px;
+  background:rgba(255,214,10,.1);color:#FFD60A;border:1px solid rgba(255,214,10,.3);
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);letter-spacing:.5px;
+}
+.nav-cta:hover{background:rgba(255,214,10,.2);transform:scale(1.05)}
+
+/* ==================== FLOATING EMOJIS ==================== */
+.floating-emoji{
+  position:fixed;font-size:28px;opacity:.45;pointer-events:none;z-index:1;
+}
+.fe1{top:12%;left:5%;animation:float1 8s ease-in-out infinite}
+.fe2{top:25%;right:8%;animation:float2 10s ease-in-out infinite}
+.fe3{top:45%;left:3%;animation:float3 9s ease-in-out infinite}
+.fe4{top:60%;right:5%;animation:float1 11s ease-in-out infinite}
+.fe5{top:75%;left:7%;animation:float2 7s ease-in-out infinite}
+.fe6{top:85%;right:10%;animation:float3 12s ease-in-out infinite}
+.fe7{top:35%;left:92%;animation:float1 9.5s ease-in-out infinite}
+.fe8{top:55%;left:1%;animation:float2 8.5s ease-in-out infinite}
+
+@keyframes float1{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-20px) rotate(10deg)}}
+@keyframes float2{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-25px) rotate(-12deg)}}
+@keyframes float3{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-15px) rotate(8deg)}}
+
+/* ==================== SECTION REVEAL ==================== */
+.reveal{opacity:0;transform:translateY(40px);transition:opacity .8s ease,transform .8s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ==================== HERO ==================== */
+.hero{
+  min-height:100vh;padding:120px 40px 60px;display:grid;
+  grid-template-columns:1fr 1fr;gap:60px;align-items:center;
+  max-width:1300px;margin:0 auto;position:relative;z-index:2;
+}
+.hero-left{position:relative}
+.hero-eyebrow{
+  font-size:11px;letter-spacing:3px;text-transform:uppercase;
+  color:rgba(255,255,255,.4);margin-bottom:20px;font-weight:600;
+}
+.hero-h1{font-family:'Syne',sans-serif;font-weight:900;line-height:1.05;margin-bottom:24px}
+.hero-h1 .line1{font-size:clamp(36px,5vw,60px);color:#FF3355;display:block;position:relative}
+.hero-h1 .line2{font-size:clamp(36px,5vw,60px);color:transparent;-webkit-text-stroke:2px #FFD60A;display:block}
+.hero-h1 .line3{font-size:clamp(36px,5vw,60px);color:#00E5A0;display:block}
+.hero-sub{font-size:14px;color:rgba(255,255,255,.5);max-width:440px;line-height:1.8;margin-bottom:28px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.hero-chip{
+  font-size:11px;padding:6px 14px;border-radius:20px;
+  border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.6);
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);cursor:pointer;
+}
+.hero-chip:hover{border-color:rgba(255,255,255,.3);color:#fff;transform:scale(1.05)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-btn-primary{
+  padding:14px 32px;border-radius:10px;font-size:13px;font-weight:700;
+  background:linear-gradient(135deg,#FF3355,#CC44FF);color:#fff;
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);letter-spacing:.5px;
+}
+.hero-btn-primary:hover{transform:scale(1.06);box-shadow:0 0 30px rgba(255,51,85,.3)}
+.hero-btn-secondary{
+  padding:14px 32px;border-radius:10px;font-size:13px;font-weight:600;
+  border:2px solid rgba(255,255,255,.1);color:rgba(255,255,255,.7);
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);
+}
+.hero-btn-secondary:hover{border-color:rgba(255,255,255,.3);color:#fff;transform:scale(1.04)}
+
+/* Hero Right Panel */
+.hero-right{
+  position:relative;background:rgba(255,255,255,.02);border:2px solid rgba(255,255,255,.06);
+  border-radius:16px;padding:24px;overflow:hidden;min-height:500px;
+}
+.hero-img-wrap{position:relative;border-radius:12px;overflow:hidden;margin-bottom:20px}
+.hero-img-wrap img{width:100%;height:280px;object-fit:cover;border-radius:12px}
+.thought-bubble{
+  position:absolute;background:rgba(18,18,31,.9);border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;padding:8px 14px;font-size:11px;color:rgba(255,255,255,.7);
+  backdrop-filter:blur(10px);white-space:nowrap;
+}
+.tb1{top:10px;right:10px;animation:float1 6s ease-in-out infinite}
+.tb2{top:60px;left:10px;animation:float2 7s ease-in-out infinite}
+.tb3{bottom:60px;right:15px;animation:float3 5s ease-in-out infinite}
+.tb4{bottom:20px;left:15px;animation:float1 8s ease-in-out infinite}
+.answer-badge{
+  position:absolute;bottom:10px;right:10px;background:rgba(0,229,160,.15);
+  border:1px solid rgba(0,229,160,.3);border-radius:8px;padding:6px 12px;
+  font-size:10px;color:#00E5A0;font-weight:600;letter-spacing:1px;
+}
+
+/* Mini Stress Game */
+.stress-game{
+  background:rgba(255,255,255,.03);border:2px solid rgba(255,255,255,.06);
+  border-radius:12px;padding:20px;
+}
+.sg-title{font-size:12px;font-weight:700;color:#FFD60A;margin-bottom:4px;letter-spacing:1px;text-transform:uppercase}
+.sg-subtitle{font-size:11px;color:rgba(255,255,255,.4);margin-bottom:16px}
+.sg-progress{display:flex;gap:6px;margin-bottom:16px}
+.sg-dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.1);transition:background .3s}
+.sg-dot.active{background:#FFD60A}
+.sg-dot.done{background:#00E5A0}
+.sg-question{font-size:13px;color:#fff;margin-bottom:14px;min-height:40px;line-height:1.5}
+.sg-btns{display:flex;gap:10px}
+.sg-btn{
+  flex:1;padding:10px;border-radius:8px;font-size:12px;font-weight:600;
+  border:2px solid rgba(255,255,255,.1);text-align:center;
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);
+}
+.sg-btn:hover{border-color:rgba(255,255,255,.3);transform:scale(1.04)}
+.sg-btn-a{color:#FF3355}
+.sg-btn-a:hover{background:rgba(255,51,85,.1);border-color:#FF3355}
+.sg-btn-b{color:#00E5A0}
+.sg-btn-b:hover{background:rgba(0,229,160,.1);border-color:#00E5A0}
+.sg-result{text-align:center;display:none}
+.sg-score{font-family:'Syne',sans-serif;font-size:48px;font-weight:900;margin-bottom:8px}
+.sg-score-label{font-size:12px;color:rgba(255,255,255,.5);margin-bottom:16px}
+.sg-result-btns{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.sg-result-btn{
+  padding:8px 18px;border-radius:8px;font-size:11px;font-weight:600;
+  border:1px solid rgba(255,255,255,.1);transition:all .3s;
+}
+.sg-result-btn:hover{transform:scale(1.05)}
+.sg-result-btn.tweet{color:#1DA1F2;border-color:rgba(29,161,242,.3)}
+.sg-result-btn.report{background:linear-gradient(135deg,#FF3355,#CC44FF);color:#fff;border:none}
+.sg-result-btn.retry{color:rgba(255,255,255,.5)}
+
+/* Confetti */
+.confetti-piece{
+  position:absolute;width:8px;height:8px;border-radius:2px;
+  animation:confettiFly 1.5s ease forwards;pointer-events:none;
+}
+@keyframes confettiFly{
+  0%{transform:translateY(0) rotate(0);opacity:1}
+  100%{transform:translateY(-200px) translateX(var(--cx)) rotate(720deg);opacity:0}
+}
+
+/* ==================== SOCIAL PROOF BAR ==================== */
+.proof-bar{
+  padding:40px 32px;display:flex;justify-content:center;gap:60px;flex-wrap:wrap;
+  border-top:1px solid rgba(255,255,255,.04);border-bottom:1px solid rgba(255,255,255,.04);
+  position:relative;z-index:2;
+}
+.proof-item{text-align:center}
+.proof-num{font-family:'Syne',sans-serif;font-size:28px;font-weight:900;color:#fff}
+.proof-label{font-size:11px;color:rgba(255,255,255,.35);letter-spacing:1px;margin-top:4px}
+
+/* ==================== TICKER ==================== */
+.ticker-wrap{
+  overflow:hidden;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.04);
+  position:relative;z-index:2;
+}
+.ticker{
+  display:flex;white-space:nowrap;animation:tickerScroll 30s linear infinite;
+}
+.ticker span{
+  font-family:'Syne',sans-serif;font-size:13px;font-weight:900;
+  color:rgba(255,255,255,.15);letter-spacing:3px;text-transform:uppercase;
+  padding:0 40px;
+}
+@keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ==================== AD SLOTS ==================== */
+.ad-slot{
+  border:1px dashed rgba(255,255,255,.08);border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,.15);font-size:10px;letter-spacing:2px;
+  text-transform:uppercase;position:relative;z-index:2;
+  margin:20px auto;max-width:728px;
+}
+.ad-slot.leaderboard{width:100%;height:90px}
+.ad-slot.rectangle{width:300px;height:250px}
+
+/* ==================== TOOLS SECTION ==================== */
+.tools-section{
+  padding:80px 32px;max-width:1300px;margin:0 auto;position:relative;z-index:2;
+}
+.tools-eyebrow{font-size:11px;letter-spacing:3px;color:rgba(255,255,255,.35);text-transform:uppercase;margin-bottom:12px;text-align:center}
+.tools-h2{
+  font-family:'Syne',sans-serif;font-weight:900;font-size:clamp(28px,4vw,48px);
+  text-align:center;margin-bottom:48px;
+  color:transparent;-webkit-text-stroke:1.5px #FFD60A;
+}
+.tools-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:2px;
+}
+.tool-card{
+  position:relative;background:rgba(255,255,255,.02);
+  border:2px solid rgba(255,255,255,.06);border-radius:0;
+  padding:0;overflow:hidden;
+  transform:rotate(var(--tilt,0deg));
+  transition:all .4s cubic-bezier(.34,1.56,.64,1);
+  cursor:pointer;
+}
+.tool-card:hover{
+  transform:rotate(0deg) scale(1.06);z-index:10;
+  border-color:var(--tc,rgba(255,255,255,.2));
+  box-shadow:0 20px 60px rgba(0,0,0,.5);
+}
+.tool-card.wide{grid-column:span 2}
+.tool-card-img{width:100%;height:200px;object-fit:cover;display:block}
+.tool-card-body{padding:16px 18px 18px}
+.tool-panel-num{
+  position:absolute;top:10px;left:12px;font-family:'Syne',sans-serif;
+  font-size:11px;font-weight:900;color:rgba(255,255,255,.2);letter-spacing:1px;
+  z-index:3;background:rgba(5,5,13,.7);padding:2px 8px;border-radius:4px;
+}
+.tool-speech{
+  display:inline-block;padding:4px 12px;border-radius:16px;font-size:10px;
+  font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:8px;
+}
+.tool-price{
+  position:absolute;top:10px;right:12px;font-size:11px;font-weight:700;
+  padding:4px 10px;border-radius:6px;z-index:3;
+  background:rgba(5,5,13,.8);
+}
+.tool-title{font-family:'Syne',sans-serif;font-weight:900;font-size:16px;color:#fff;margin-bottom:6px}
+.tool-desc{font-size:12px;color:rgba(255,255,255,.45);line-height:1.6;margin-bottom:10px}
+.tool-tags{display:flex;flex-wrap:wrap;gap:4px}
+.tool-tag{font-size:9px;padding:3px 8px;border-radius:4px;background:rgba(255,255,255,.04);color:rgba(255,255,255,.3)}
+.tool-pow{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(0) rotate(-15deg);
+  font-family:'Syne',sans-serif;font-size:48px;font-weight:900;color:#FFD60A;
+  text-shadow:0 0 20px rgba(255,214,10,.5);pointer-events:none;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1);z-index:20;
+}
+.tool-card:hover .tool-pow{transform:translate(-50%,-50%) scale(1) rotate(-5deg)}
+
+/* ==================== HOW IT WORKS ==================== */
+.how-section{
+  padding:80px 32px;max-width:1000px;margin:0 auto;position:relative;z-index:2;
+}
+.how-h2{
+  font-family:'Syne',sans-serif;font-weight:900;font-size:clamp(24px,3.5vw,40px);
+  text-align:center;margin-bottom:48px;color:#fff;
+}
+.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.how-step{
+  text-align:center;padding:28px 20px;
+  background:rgba(255,255,255,.02);border:2px solid rgba(255,255,255,.06);
+  border-radius:12px;transition:border-color .3s;
+}
+.how-step:hover{border-color:rgba(255,255,255,.15)}
+.how-num{font-family:'Syne',sans-serif;font-size:36px;font-weight:900;color:rgba(255,255,255,.08);margin-bottom:12px}
+.how-step-title{font-size:13px;font-weight:700;color:#fff;margin-bottom:8px}
+.how-step-desc{font-size:12px;color:rgba(255,255,255,.4);line-height:1.6}
+
+/* ==================== PREMIUM SECTION ==================== */
+.premium-section{
+  padding:80px 32px;position:relative;z-index:2;
+  background:linear-gradient(180deg,transparent,rgba(204,68,255,.02),transparent);
+}
+.premium-inner{max-width:900px;margin:0 auto;text-align:center}
+.premium-badge{
+  display:inline-block;font-size:10px;font-weight:700;letter-spacing:3px;
+  text-transform:uppercase;color:#CC44FF;padding:6px 16px;
+  border:1px solid rgba(204,68,255,.3);border-radius:20px;margin-bottom:16px;
+}
+.premium-h2{font-family:'Syne',sans-serif;font-weight:900;font-size:clamp(28px,4vw,48px);color:#fff;margin-bottom:12px}
+.premium-sub{font-size:13px;color:rgba(255,255,255,.4);margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto}
+.pricing-toggle{display:flex;justify-content:center;gap:0;margin-bottom:36px}
+.pricing-toggle-btn{
+  padding:10px 28px;font-size:12px;font-weight:600;
+  border:2px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);
+  transition:all .3s;
+}
+.pricing-toggle-btn:first-child{border-radius:8px 0 0 8px}
+.pricing-toggle-btn:last-child{border-radius:0 8px 8px 0;position:relative}
+.pricing-toggle-btn.active{background:rgba(204,68,255,.15);border-color:#CC44FF;color:#CC44FF}
+.savings-badge{
+  position:absolute;top:-10px;right:-10px;font-size:9px;font-weight:700;
+  background:#00E5A0;color:#05050D;padding:2px 8px;border-radius:10px;
+}
+.pricing-cards{display:flex;gap:24px;justify-content:center;flex-wrap:wrap}
+.pricing-card{
+  background:rgba(255,255,255,.03);border:2px solid rgba(255,255,255,.08);
+  border-radius:16px;padding:32px 28px;width:340px;text-align:left;position:relative;
+  transition:border-color .3s;
+}
+.pricing-card:hover{border-color:rgba(204,68,255,.3)}
+.pricing-card.popular{border-color:rgba(204,68,255,.4)}
+.popular-tag{
+  position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+  font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;
+  background:#CC44FF;color:#fff;padding:4px 14px;border-radius:10px;
+}
+.pricing-amount{font-family:'Syne',sans-serif;font-size:36px;font-weight:900;color:#fff;margin:12px 0}
+.pricing-period{font-size:12px;color:rgba(255,255,255,.4)}
+.pricing-features{list-style:none;margin:20px 0}
+.pricing-features li{font-size:12px;color:rgba(255,255,255,.5);padding:6px 0;display:flex;align-items:center;gap:8px}
+.pricing-features li::before{content:'✓';color:#00E5A0;font-weight:700}
+.pricing-cta{
+  width:100%;padding:14px;border-radius:10px;font-size:13px;font-weight:700;
+  background:linear-gradient(135deg,#CC44FF,#8B5CF6);color:#fff;
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);margin-top:8px;
+  text-align:center;display:block;
+}
+.pricing-cta:hover{transform:scale(1.04);box-shadow:0 0 30px rgba(204,68,255,.3)}
+
+/* ==================== EMAIL CAPTURE ==================== */
+.email-section{
+  padding:80px 32px;position:relative;z-index:2;
+  border-top:1px solid rgba(255,255,255,.04);
+  border-bottom:1px solid rgba(255,255,255,.04);
+}
+.email-inner{max-width:600px;margin:0 auto;text-align:center}
+.email-h2{font-family:'Syne',sans-serif;font-weight:900;font-size:clamp(22px,3vw,32px);color:#fff;margin-bottom:12px}
+.email-sub{font-size:13px;color:rgba(255,255,255,.4);margin-bottom:28px;line-height:1.7}
+.email-form{display:flex;gap:10px;margin-bottom:12px}
+.email-input{
+  flex:1;padding:14px 18px;border-radius:10px;font-size:13px;
+  border:2px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);
+}
+.email-submit{
+  padding:14px 28px;border-radius:10px;font-size:13px;font-weight:700;
+  background:#FFD60A;color:#05050D;white-space:nowrap;
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);
+}
+.email-submit:hover{transform:scale(1.05);box-shadow:0 0 20px rgba(255,214,10,.3)}
+.email-fine{font-size:11px;color:rgba(255,255,255,.25);margin-top:8px}
+.email-success{display:none;color:#00E5A0;font-size:13px;font-weight:600;margin-top:12px}
+
+/* ==================== AFFILIATE SECTION ==================== */
+.affiliate-section{padding:80px 32px;max-width:1100px;margin:0 auto;position:relative;z-index:2}
+.affiliate-h2{font-family:'Syne',sans-serif;font-weight:900;font-size:clamp(22px,3vw,32px);text-align:center;color:#fff;margin-bottom:8px}
+.affiliate-disc{text-align:center;font-size:11px;color:rgba(255,255,255,.25);margin-bottom:36px}
+.affiliate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.affiliate-card{
+  background:rgba(255,255,255,.02);border:2px solid rgba(255,255,255,.06);
+  border-radius:12px;padding:24px;transition:all .3s cubic-bezier(.34,1.56,.64,1);
+}
+.affiliate-card:hover{border-color:rgba(255,255,255,.15);transform:translateY(-4px)}
+.affiliate-logo{font-size:28px;margin-bottom:12px}
+.affiliate-name{font-size:14px;font-weight:700;color:#fff;margin-bottom:4px}
+.affiliate-desc{font-size:12px;color:rgba(255,255,255,.4);margin-bottom:14px;line-height:1.5}
+.affiliate-link{
+  font-size:11px;font-weight:600;color:#FFD60A;
+  transition:color .3s;display:inline-block;
+}
+.affiliate-link:hover{color:#fff}
+
+/* ==================== TWEETS STRIP ==================== */
+.tweets-section{
+  padding:40px 0;overflow:hidden;position:relative;z-index:2;
+  border-top:1px solid rgba(255,255,255,.04);
+  border-bottom:1px solid rgba(255,255,255,.04);
+}
+.tweets-h3{text-align:center;font-size:11px;letter-spacing:3px;color:rgba(255,255,255,.25);text-transform:uppercase;margin-bottom:24px}
+.tweets-track{display:flex;gap:16px;animation:tweetScroll 40s linear infinite;white-space:nowrap}
+.tweet-card{
+  flex-shrink:0;width:300px;background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.06);border-radius:12px;
+  padding:18px;white-space:normal;
+}
+.tweet-header{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.tweet-avatar{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:14px}
+.tweet-name{font-size:12px;font-weight:600;color:#fff}
+.tweet-handle{font-size:11px;color:rgba(255,255,255,.3)}
+.tweet-body{font-size:12px;color:rgba(255,255,255,.55);line-height:1.6}
+@keyframes tweetScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* ==================== SEO FAQ ==================== */
+.faq-section{padding:80px 32px;max-width:1000px;margin:0 auto;position:relative;z-index:2}
+.faq-h2{font-family:'Syne',sans-serif;font-weight:900;font-size:clamp(22px,3vw,32px);text-align:center;color:#fff;margin-bottom:40px}
+.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.faq-item{
+  background:rgba(255,255,255,.02);border:2px solid rgba(255,255,255,.06);
+  border-radius:12px;padding:20px;transition:border-color .3s;
+}
+.faq-item:hover{border-color:rgba(255,255,255,.1)}
+.faq-q{font-size:14px;font-weight:700;color:#fff;margin-bottom:8px}
+.faq-a{font-size:12px;color:rgba(255,255,255,.4);line-height:1.7}
+
+/* ==================== FOOTER ==================== */
+.footer{
+  padding:60px 32px 30px;border-top:1px solid rgba(255,255,255,.04);
+  position:relative;z-index:2;
+}
+.footer-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:40px;max-width:1100px;margin:0 auto}
+.footer-col h4{font-size:13px;font-weight:700;color:#fff;margin-bottom:14px}
+.footer-col p,.footer-col a{font-size:12px;color:rgba(255,255,255,.35);line-height:1.8;display:block}
+.footer-col a:hover{color:rgba(255,255,255,.6)}
+.footer-logo{display:flex;align-items:center;gap:8px;font-family:'Syne',sans-serif;font-weight:900;font-size:16px;color:#fff;margin-bottom:12px}
+.footer-bottom{text-align:center;padding-top:30px;margin-top:30px;border-top:1px solid rgba(255,255,255,.04);max-width:1100px;margin-left:auto;margin-right:auto}
+.footer-bottom a{font-size:11px;color:rgba(255,255,255,.2)}
+.lang-flags{display:flex;gap:8px;margin-top:12px}
+.lang-flag{
+  font-size:18px;cursor:pointer;opacity:.5;transition:opacity .3s;
+}
+.lang-flag:hover,.lang-flag.active{opacity:1}
+
+/* ==================== MODAL ==================== */
+.modal-overlay{
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(5,5,13,.85);backdrop-filter:blur(10px);
+  z-index:5000;display:none;align-items:flex-start;justify-content:center;
+  overflow-y:auto;padding:60px 20px;
+}
+.modal-overlay.open{display:flex}
+.modal{
+  background:#0d0d1a;border:2px solid rgba(255,255,255,.08);
+  border-radius:16px;width:100%;max-width:560px;padding:32px;
+  position:relative;animation:modalIn .4s cubic-bezier(.34,1.56,.64,1);
+}
+@keyframes modalIn{0%{opacity:0;transform:scale(.9) translateY(20px)}100%{opacity:1;transform:scale(1) translateY(0)}}
+.modal-close{
+  position:absolute;top:14px;right:14px;width:32px;height:32px;
+  border-radius:50%;background:rgba(255,255,255,.06);
+  display:flex;align-items:center;justify-content:center;
+  font-size:16px;color:rgba(255,255,255,.5);transition:all .3s;cursor:pointer;
+}
+.modal-close:hover{background:rgba(255,255,255,.12);color:#fff}
+.modal-tool-title{font-family:'Syne',sans-serif;font-weight:900;font-size:22px;color:#fff;margin-bottom:4px}
+.modal-tool-sub{font-size:12px;color:rgba(255,255,255,.35);margin-bottom:20px}
+
+/* Free code box */
+.free-code-box{
+  background:rgba(204,68,255,.06);border:1px solid rgba(204,68,255,.2);
+  border-radius:10px;padding:14px;margin-bottom:20px;
+}
+.free-code-box label{font-size:11px;color:#CC44FF;font-weight:600;display:block;margin-bottom:6px;letter-spacing:1px}
+.free-code-row{display:flex;gap:8px}
+.free-code-input{flex:1;font-size:12px;padding:8px 12px;border-radius:6px}
+.free-code-btn{
+  padding:8px 16px;border-radius:6px;font-size:11px;font-weight:700;
+  background:#CC44FF;color:#fff;transition:all .3s;
+}
+.free-code-btn:hover{transform:scale(1.05)}
+
+/* Form fields */
+.modal-form{display:flex;flex-direction:column;gap:12px;margin-bottom:20px}
+.modal-field label{font-size:11px;color:rgba(255,255,255,.4);display:block;margin-bottom:4px;letter-spacing:.5px}
+.modal-field input,.modal-field textarea,.modal-field select{width:100%;font-size:12px}
+
+/* Preview / Report */
+.modal-preview-btn{
+  width:100%;padding:14px;border-radius:10px;font-size:13px;font-weight:700;
+  background:rgba(255,255,255,.06);border:2px solid rgba(255,255,255,.1);
+  color:#fff;transition:all .3s cubic-bezier(.34,1.56,.64,1);
+  margin-bottom:16px;
+}
+.modal-preview-btn:hover{transform:scale(1.03);border-color:rgba(255,255,255,.2)}
+.modal-loading{display:none;text-align:center;padding:20px;font-size:12px;color:rgba(255,255,255,.4)}
+.loading-dots span{animation:bounceDot .6s ease infinite;display:inline-block;margin:0 2px}
+.loading-dots span:nth-child(2){animation-delay:.1s}
+.loading-dots span:nth-child(3){animation-delay:.2s}
+@keyframes bounceDot{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+
+.modal-preview-box{
+  display:none;border:2px solid rgba(255,214,10,.2);border-radius:10px;
+  padding:18px;margin-bottom:16px;position:relative;overflow:hidden;
+}
+.modal-preview-label{font-size:10px;font-weight:700;letter-spacing:2px;color:#FFD60A;text-transform:uppercase;margin-bottom:8px}
+.modal-preview-text{font-size:13px;color:rgba(255,255,255,.7);line-height:1.7}
+.modal-preview-blur{
+  position:absolute;bottom:0;left:0;width:100%;height:60px;
+  background:linear-gradient(transparent,#0d0d1a);
+}
+
+.modal-unlock-btn{
+  display:none;width:100%;padding:14px;border-radius:10px;font-size:13px;font-weight:700;
+  background:linear-gradient(135deg,#FF3355,#CC44FF);color:#fff;
+  transition:all .3s cubic-bezier(.34,1.56,.64,1);margin-bottom:8px;
+  text-align:center;
+}
+.modal-unlock-btn:hover{transform:scale(1.04);box-shadow:0 0 30px rgba(255,51,85,.3)}
+.modal-paid-btn{
+  display:none;width:100%;padding:14px;border-radius:10px;font-size:13px;font-weight:600;
+  border:2px solid rgba(255,255,255,.1);color:rgba(255,255,255,.6);
+  transition:all .3s;text-align:center;
+}
+.modal-paid-btn:hover{border-color:rgba(255,255,255,.2);color:#fff}
+
+.modal-report{display:none;margin-top:16px}
+.modal-report-content{
+  font-size:13px;color:rgba(255,255,255,.7);line-height:1.8;
+  white-space:pre-wrap;word-wrap:break-word;
+}
+.modal-report-content strong{color:#fff}
+
+/* Share card */
+.share-card{
+  display:none;margin-top:20px;background:rgba(255,255,255,.03);
+  border:2px solid rgba(255,255,255,.08);border-radius:12px;padding:20px;
+  text-align:center;
+}
+.share-donut{margin:0 auto 12px}
+.share-score-text{font-family:'Syne',sans-serif;font-size:24px;font-weight:900;color:#fff;margin-bottom:4px}
+.share-tool-name{font-size:11px;color:rgba(255,255,255,.35);margin-bottom:16px;letter-spacing:1px}
+.share-btns{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.share-btn{
+  padding:8px 16px;border-radius:8px;font-size:11px;font-weight:600;
+  border:1px solid rgba(255,255,255,.1);transition:all .3s;
+}
+.share-btn:hover{transform:scale(1.05)}
+.share-btn.tw{color:#1DA1F2;border-color:rgba(29,161,242,.3)}
+.share-btn.wa{color:#25D366;border-color:rgba(37,211,102,.3)}
+.share-btn.li{color:#0A66C2;border-color:rgba(10,102,194,.3)}
+.share-btn.cp{color:rgba(255,255,255,.5)}
+
+/* Chat UI (AI Friend) */
+.chat-container{display:none;flex-direction:column;height:400px}
+.chat-messages{flex:1;overflow-y:auto;padding:10px 0;display:flex;flex-direction:column;gap:10px}
+.chat-msg{
+  max-width:80%;padding:10px 14px;border-radius:12px;font-size:13px;line-height:1.6;
+  animation:msgIn .3s ease;
+}
+@keyframes msgIn{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0)}}
+.chat-msg.user{align-self:flex-end;background:rgba(204,68,255,.15);border:1px solid rgba(204,68,255,.2);color:#e0e0e0}
+.chat-msg.ai{align-self:flex-start;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.7)}
+.chat-msg.typing .typing-dots span{display:inline-block;width:6px;height:6px;background:rgba(255,255,255,.3);border-radius:50%;margin:0 2px;animation:bounceDot .6s ease infinite}
+.chat-msg.typing .typing-dots span:nth-child(2){animation-delay:.1s}
+.chat-msg.typing .typing-dots span:nth-child(3){animation-delay:.2s}
+.chat-input-row{display:flex;gap:8px;margin-top:12px}
+.chat-input{flex:1;padding:12px 16px;border-radius:10px;font-size:13px}
+.chat-send{
+  padding:12px 20px;border-radius:10px;font-size:13px;font-weight:700;
+  background:#00BCD4;color:#05050D;transition:all .3s;
+}
+.chat-send:hover{transform:scale(1.05)}
+
+/* ==================== GLITCH EFFECT ==================== */
+@keyframes glitch{
+  0%,100%{text-shadow:none}
+  20%{text-shadow:-2px 0 #FF3355,2px 0 #00E5A0}
+  40%{text-shadow:2px 0 #CC44FF,-2px 0 #FFD60A}
+  60%{text-shadow:-1px 0 #3B82F6,1px 0 #FF3355}
+  80%{text-shadow:1px 0 #00E5A0,-1px 0 #CC44FF}
+}
+.glitch-active{animation:glitch .3s ease}
+
+@keyframes glowPulse{0%,100%{box-shadow:0 0 4px #00E5A0}50%{box-shadow:0 0 12px #00E5A0,0 0 20px rgba(0,229,160,.3)}}
+
+/* ==================== RESPONSIVE ==================== */
+@media(max-width:1100px){
+  .tools-grid{grid-template-columns:repeat(2,1fr)}
+  .tool-card.wide{grid-column:span 2}
+}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;padding:100px 24px 40px}
+  .hero-right{display:none}
+  .nav-links a:not(.nav-cta){display:none}
+  .tools-grid{grid-template-columns:1fr}
+  .tool-card.wide{grid-column:span 1}
+  .pricing-cards{flex-direction:column;align-items:center}
+}
+@media(max-width:600px){
+  .how-grid{grid-template-columns:1fr}
+  .faq-grid{grid-template-columns:1fr}
+  .affiliate-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:24px}
+  .floating-emoji{display:none!important}
+  .proof-bar{gap:24px}
+  .proof-num{font-size:22px}
+  .email-form{flex-direction:column}
+  body{font-size:13px}
+  .hero{padding:90px 16px 30px}
+  .tools-section,.how-section,.faq-section,.affiliate-section{padding:50px 16px}
+  .premium-section,.email-section{padding:50px 16px}
+}
+</style>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+<!-- Floating Emojis -->
+<div class="floating-emoji fe1">🔥</div>
+<div class="floating-emoji fe2">💀</div>
+<div class="floating-emoji fe3">🧠</div>
+<div class="floating-emoji fe4">💸</div>
+<div class="floating-emoji fe5">🎯</div>
+<div class="floating-emoji fe6">⚡</div>
+<div class="floating-emoji fe7">🫠</div>
+<div class="floating-emoji fe8">🪬</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav-logo">
+    <span class="nav-dot"></span>
+    HumanLens
+    <span class="nav-beta">BETA</span>
+  </a>
+  <div class="nav-links">
+    <a href="#tools">Tools</a>
+    <a href="#how">How it works</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#tools" class="nav-cta" id="navCta">Try for $1 →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="heroSection">
+  <div class="hero-left">
+    <div class="hero-eyebrow" id="heroEyebrow">AI LIFE TOOLS · NO SUGARCOATING</div>
+    <h1 class="hero-h1">
+      <span class="line1" id="h1line1">YOUR LIFE,</span>
+      <span class="line2" id="h1line2">BRUTALLY</span>
+      <span class="line3" id="h1line3">ANALYZED.</span>
+    </h1>
+    <p class="hero-sub" id="heroSub">HumanLens uses AI to give you painfully honest analysis of your career, money, relationships, and life decisions. No therapist small-talk. No toxic positivity. Just truth.</p>
+    <div class="hero-chips" id="heroChips">
+      <span class="hero-chip" data-tool="layoff">🔥 Layoff Risk</span>
+      <span class="hero-chip" data-tool="salary">💰 Salary Truth</span>
+      <span class="hero-chip" data-tool="relship">💜 Relationship</span>
+      <span class="hero-chip" data-tool="burnout">🧠 Burnout</span>
+      <span class="hero-chip" data-tool="debt">💸 Debt Trap</span>
+      <span class="hero-chip" data-tool="decide">🎯 Decision</span>
+      <span class="hero-chip" data-tool="tariff">📦 Tariff Impact</span>
+      <span class="hero-chip" data-tool="visa">✈️ Visa Roadmap</span>
+    </div>
+    <div class="hero-ctas">
+      <button class="hero-btn-primary" id="heroPrimary" onclick="scrollToTools()">Try Free Preview →</button>
+      <button class="hero-btn-secondary" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">How it works</button>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <img src="img/hero.jpg" alt="HumanLens AI Life Analysis" loading="eager">
+      <div class="thought-bubble tb1">Am I getting laid off? 😰</div>
+      <div class="thought-bubble tb2">Is my salary fair? 🤔</div>
+      <div class="thought-bubble tb3">Am I burning out? 🔥</div>
+      <div class="thought-bubble tb4">Should I quit? 💭</div>
+      <div class="answer-badge">AI ANSWERS →</div>
+    </div>
+    <!-- Mini Stress Game -->
+    <div class="stress-game" id="stressGame">
+      <div class="sg-title">⚡ QUICK STRESS CHECK</div>
+      <div class="sg-subtitle">5 questions. 30 seconds. Know your stress level.</div>
+      <div class="sg-progress" id="sgProgress"></div>
+      <div class="sg-question" id="sgQuestion"></div>
+      <div class="sg-btns" id="sgBtns">
+        <button class="sg-btn sg-btn-a" id="sgBtnA"></button>
+        <button class="sg-btn sg-btn-b" id="sgBtnB"></button>
+      </div>
+      <div class="sg-result" id="sgResult">
+        <div class="sg-score" id="sgScore"></div>
+        <div class="sg-score-label" id="sgScoreLabel"></div>
+        <div class="sg-result-btns">
+          <button class="sg-result-btn tweet" id="sgTweet">Tweet Score</button>
+          <button class="sg-result-btn report" onclick="scrollToTools()">Get Full Report →</button>
+          <button class="sg-result-btn retry" id="sgRetry">↻ Retry</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AD SLOT: After Hero -->
+<div class="ad-slot leaderboard"><!-- Google AdSense code here -->Ad</div>
+
+<!-- SOCIAL PROOF BAR -->
+<div class="proof-bar reveal" id="proofBar">
+  <div class="proof-item">
+    <div class="proof-num" data-target="12847">0</div>
+    <div class="proof-label">reports generated</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-num" data-target="4.8" data-decimal="true">0</div>
+    <div class="proof-label">avg rating</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-num" data-target="38">0</div>
+    <div class="proof-label">countries</div>
+  </div>
+  <div class="proof-item">
+    <div class="proof-num" data-target="2.4" data-prefix="$" data-suffix="M" data-decimal="true">0</div>
+    <div class="proof-label">salary gaps found</div>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker" id="ticker">
+    <span>LAYOFF RISK 2025 — HIGH IN TECH</span>
+    <span>UNDERPAID — 68% NEVER NEGOTIATE</span>
+    <span>BURNOUT — RISING GLOBALLY</span>
+    <span>TOXIC WORKPLACES — 1 IN 5</span>
+    <span>DEBT TRAP — EMI ABOVE 50% INCOME</span>
+    <span>AI JOBS REPLACING HUMANS — 2025</span>
+    <span>VISA REJECTIONS — UP 23%</span>
+    <span>RELATIONSHIP RED FLAGS — IGNORED</span>
+    <span>LAYOFF RISK 2025 — HIGH IN TECH</span>
+    <span>UNDERPAID — 68% NEVER NEGOTIATE</span>
+    <span>BURNOUT — RISING GLOBALLY</span>
+    <span>TOXIC WORKPLACES — 1 IN 5</span>
+    <span>DEBT TRAP — EMI ABOVE 50% INCOME</span>
+    <span>AI JOBS REPLACING HUMANS — 2025</span>
+    <span>VISA REJECTIONS — UP 23%</span>
+    <span>RELATIONSHIP RED FLAGS — IGNORED</span>
+  </div>
+</div>
+
+<!-- TOOLS SECTION -->
+<section class="tools-section reveal" id="tools">
+  <div class="tools-eyebrow" id="toolsEyebrow">PICK YOUR CRISIS</div>
+  <h2 class="tools-h2" id="toolsH2">What's keeping you up at night?</h2>
+  <div class="tools-grid" id="toolsGrid">
+    <!-- Cards injected by JS -->
+  </div>
+</section>
+
+<!-- AD SLOT: Between tools and how-it-works -->
+<div class="ad-slot rectangle"><!-- Google AdSense code here -->Ad</div>
+
+<!-- HOW IT WORKS -->
+<section class="how-section reveal" id="how">
+  <h2 class="how-h2" id="howH2">How It Works</h2>
+  <div class="how-grid" id="howGrid">
+    <!-- Steps injected by JS -->
+  </div>
+</section>
+
+<!-- PREMIUM SECTION -->
+<section class="premium-section reveal" id="pricing">
+  <div class="premium-inner">
+    <div class="premium-badge">NEW</div>
+    <h2 class="premium-h2" id="proTitle">HumanLens Pro</h2>
+    <p class="premium-sub" id="proDesc">Unlimited access to every tool. No per-report fees. Priority AI analysis.</p>
+    <div class="pricing-toggle">
+      <button class="pricing-toggle-btn active" data-period="monthly" onclick="togglePricing('monthly')">Monthly</button>
+      <button class="pricing-toggle-btn" data-period="yearly" onclick="togglePricing('yearly')">
+        Yearly
+        <span class="savings-badge">Save 73%</span>
+      </button>
+    </div>
+    <div class="pricing-cards" id="pricingCards">
+      <div class="pricing-card">
+        <div class="popular-tag" id="popularTag" style="display:none">MOST POPULAR</div>
+        <div class="pricing-amount" id="pricingAmount">$9</div>
+        <div class="pricing-period" id="pricingPeriod">/month</div>
+        <ul class="pricing-features">
+          <li>Unlimited reports (all 10 tools)</li>
+          <li>Priority AI analysis</li>
+          <li>New tools first</li>
+          <li>Export PDF reports</li>
+          <li>Monthly life audit email</li>
+        </ul>
+        <a href="https://gautamgaurav.gumroad.com/l/humanlens-pro" target="_blank" class="pricing-cta">Get Pro Access →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL CAPTURE -->
+<section class="email-section reveal" id="emailSection">
+  <div class="email-inner">
+    <h2 class="email-h2" id="emailH2">Get your free 2025 Survival Guide</h2>
+    <p class="email-sub" id="emailSub">The layoff playbook, salary scripts, and burnout recovery plan — delivered free to your inbox.</p>
+    <form class="email-form" id="emailForm" onsubmit="handleEmailSubmit(event)">
+      <input type="email" class="email-input" id="emailInput" placeholder="you@email.com" required>
+      <button type="submit" class="email-submit" id="emailBtn">Subscribe</button>
+    </form>
+    <div class="email-fine">Join 8,000+ people. Unsubscribe anytime. No spam.</div>
+    <div class="email-success" id="emailSuccess">🎉 You're in! Check your inbox soon.</div>
+  </div>
+</section>
+
+<!-- AFFILIATE SECTION -->
+<section class="affiliate-section reveal" id="affiliates">
+  <h2 class="affiliate-h2">Recommended Resources</h2>
+  <div class="affiliate-disc">Partner recommendations · We may earn a commission</div>
+  <div class="affiliate-grid" id="affiliateGrid">
+    <!-- Cards injected by JS -->
+  </div>
+</section>
+
+<!-- TWEETS STRIP -->
+<section class="tweets-section reveal">
+  <div class="tweets-h3">WHAT PEOPLE ARE SAYING</div>
+  <div style="overflow:hidden">
+    <div class="tweets-track" id="tweetsTrack">
+      <!-- Tweets injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- SEO FAQ -->
+<section class="faq-section reveal" id="faq">
+  <h2 class="faq-h2">Frequently Asked Questions</h2>
+  <div class="faq-grid" id="faqGrid">
+    <!-- FAQ items injected by JS -->
+  </div>
+</section>
+
+<!-- AD SLOT: Before Footer -->
+<div class="ad-slot leaderboard"><!-- Google AdSense code here -->Ad</div>
+
+<!-- FOOTER -->
+<footer class="footer" id="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="footer-logo"><span class="nav-dot"></span> HumanLens</div>
+      <p id="footerDesc">AI life tools that don't sugarcoat it. Get brutally honest analysis of your career, money, relationships and life decisions.</p>
+      <div class="lang-flags" id="langFlags">
+        <span class="lang-flag active" data-lang="en" title="English">🇺🇸</span>
+        <span class="lang-flag" data-lang="es" title="Español">🇪🇸</span>
+        <span class="lang-flag" data-lang="de" title="Deutsch">🇩🇪</span>
+        <span class="lang-flag" data-lang="pt" title="Português">🇧🇷</span>
+        <span class="lang-flag" data-lang="fr" title="Français">🇫🇷</span>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Tools</h4>
+      <a href="#" onclick="openModal('layoff');return false">Layoff Risk — $1</a>
+      <a href="#" onclick="openModal('salary');return false">Salary Truth — $1</a>
+      <a href="#" onclick="openModal('relship');return false">Relationship — $1</a>
+      <a href="#" onclick="openModal('burnout');return false">Burnout — $1</a>
+      <a href="#" onclick="openModal('debt');return false">Debt Trap — $1</a>
+      <a href="#" onclick="openModal('decide');return false">Decision — $1</a>
+      <a href="#" onclick="openModal('tariff');return false">Tariff Impact — $2</a>
+      <a href="#" onclick="openModal('visa');return false">Visa Roadmap — $2</a>
+      <a href="#" onclick="openModal('toxic');return false">Toxic Workplace — $2</a>
+      <a href="#" onclick="openModal('friend');return false">AI Friend — FREE</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="https://twitter.com/humanlens" target="_blank">Twitter / X</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="mailto:hello@humanlens.co">hello@humanlens.co</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-tool-title" id="modalTitle"></div>
+    <div class="modal-tool-sub" id="modalSub"></div>
+
+    <!-- Free Code Box -->
+    <div class="free-code-box" id="freeCodeBox">
+      <label id="codeLabel">🎁 Have a free code?</label>
+      <div class="free-code-row">
+        <input type="text" class="free-code-input" id="freeCodeInput" placeholder="Enter code">
+        <button class="free-code-btn" id="freeCodeBtn" onclick="validateFreeCode()">Apply</button>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="modal-form" id="modalForm"></div>
+
+    <!-- Preview Button -->
+    <button class="modal-preview-btn" id="modalPreviewBtn" onclick="getPreview()">Get Free Preview</button>
+
+    <!-- Loading -->
+    <div class="modal-loading" id="modalLoading">
+      <div class="loading-dots"><span>●</span><span>●</span><span>●</span></div>
+      <div style="margin-top:8px" id="loadingText">Analyzing your situation...</div>
+    </div>
+
+    <!-- Preview Box -->
+    <div class="modal-preview-box" id="modalPreviewBox">
+      <div class="modal-preview-label" id="previewLabel">FREE PREVIEW</div>
+      <div class="modal-preview-text" id="modalPreviewText"></div>
+      <div class="modal-preview-blur"></div>
+    </div>
+
+    <!-- Unlock / Paid buttons -->
+    <a class="modal-unlock-btn" id="modalUnlockBtn" target="_blank">Unlock Full Report →</a>
+    <button class="modal-paid-btn" id="modalPaidBtn" onclick="getFullReport()">I paid — Show Full Report</button>
+
+    <!-- Full Report -->
+    <div class="modal-report" id="modalReport">
+      <div class="modal-report-content" id="modalReportContent"></div>
+    </div>
+
+    <!-- Share Card -->
+    <div class="share-card" id="shareCard">
+      <svg class="share-donut" id="shareDonut" width="100" height="100" viewBox="0 0 100 100"></svg>
+      <div class="share-score-text" id="shareScoreText"></div>
+      <div class="share-tool-name" id="shareToolName"></div>
+      <div class="share-btns">
+        <button class="share-btn tw" id="shareTw" onclick="shareTwitter()">Tweet</button>
+        <button class="share-btn wa" id="shareWa" onclick="shareWhatsApp()">WhatsApp</button>
+        <button class="share-btn li" id="shareLi" onclick="shareLinkedIn()">LinkedIn</button>
+        <button class="share-btn cp" id="shareCp" onclick="shareCopy()">Copy</button>
+      </div>
+    </div>
+
+    <!-- Chat UI (for AI Friend) -->
+    <div class="chat-container" id="chatContainer">
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-input-row">
+        <input type="text" class="chat-input" id="chatInput" placeholder="Type something..." onkeydown="if(event.key==='Enter')sendChat()">
+        <button class="chat-send" id="chatSend" onclick="sendChat()">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== JAVASCRIPT ==================== -->
+<script>
+/* ==================== CONFIG ==================== */
+const CFG = {
+  KEY: "YOUR_ANTHROPIC_KEY_HERE",
+  FREE_CODE: "MYFREE2024",
+  LINKS: {
+    layoff: "https://gautamgaurav.gumroad.com/l/aifqtk",
+    salary: "https://gautamgaurav.gumroad.com/l/eucvo",
+    relship: "https://gautamgaurav.gumroad.com/l/fhssbv",
+    debt: "https://gautamgaurav.gumroad.com/l/yxyfg",
+    burnout: "https://gautamgaurav.gumroad.com/l/pulmlb",
+    decide: "https://gautamgaurav.gumroad.com/l/xhenif",
+    tariff: "https://gautamgaurav.gumroad.com/l/qigso",
+    visa: "https://gautamgaurav.gumroad.com/l/vloezf",
+    toxic: "https://gautamgaurav.gumroad.com/l/ieeanh"
+  },
+  PRICE: { layoff:"$1", salary:"$1", relship:"$1", debt:"$1", burnout:"$1", decide:"$1", tariff:"$2", visa:"$2", toxic:"$2" }
+};
+
+/* ==================== TRANSLATIONS ==================== */
+const TX = {
+  en: {
+    eyebrow: "AI LIFE TOOLS · NO SUGARCOATING",
+    h1line1: "YOUR LIFE,", h1line2: "BRUTALLY", h1line3: "ANALYZED.",
+    heroSub: "HumanLens uses AI to give you painfully honest analysis of your career, money, relationships, and life decisions. No therapist small-talk. No toxic positivity. Just truth.",
+    tryFree: "Try Free Preview →", howItWorks: "How it works",
+    pickCrisis: "PICK YOUR CRISIS", sectionH2: "What's keeping you up at night?",
+    step1title: "Tell Your Situation", step1desc: "Fill in details about your specific life situation. The more honest, the better.",
+    step2title: "Free AI Preview", step2desc: "Get a sharp, personalized teaser — free. See if the AI actually gets you.",
+    step3title: "Pay to Unlock ($1)", step3desc: "One dollar via Gumroad. Get your full, brutally honest AI report.",
+    step4title: "Share Your Score", step4desc: "Get a shareable score card. Post it. Compare with friends. Go viral.",
+    freePreviewBtn: "Get Free Preview", unlockBtn: "Unlock Full Report", iPaidBtn: "I paid — Show Full Report",
+    freeLbl: "FREE", codeLabel: "🎁 Have a free code?", codePlaceholder: "Enter code", codeBtn: "Apply",
+    loadingText: "Analyzing your situation...", previewLabel: "FREE PREVIEW",
+    shareTwitter: "Tweet", shareWhatsApp: "WhatsApp", shareLinkedIn: "LinkedIn", shareCopy: "Copy",
+    footerDesc: "AI life tools that don't sugarcoat it. Get brutally honest analysis of your career, money, relationships and life decisions.",
+    chatPlaceholder: "Type something...", chatSend: "Send",
+    chatWelcome: "Hey! I'm here to listen. What's on your mind? No judgment, no BS. 💬",
+    proTitle: "HumanLens Pro", proDesc: "Unlimited access to every tool. No per-report fees. Priority AI analysis.",
+    emailPlaceholder: "you@email.com", emailBtn: "Subscribe",
+    emailH2: "Get your free 2025 Survival Guide",
+    emailSub: "The layoff playbook, salary scripts, and burnout recovery plan — delivered free to your inbox.",
+    emailSuccess: "🎉 You're in! Check your inbox soon."
+  },
+  es: {
+    eyebrow: "HERRAMIENTAS DE VIDA IA · SIN ENDULZAR",
+    h1line1: "TU VIDA,", h1line2: "BRUTALMENTE", h1line3: "ANALIZADA.",
+    heroSub: "HumanLens usa IA para darte un análisis honesto de tu carrera, dinero, relaciones y decisiones de vida. Sin charla de terapeuta. Sin positivismo tóxico. Solo verdad.",
+    tryFree: "Vista previa gratis →", howItWorks: "Cómo funciona",
+    pickCrisis: "ELIGE TU CRISIS", sectionH2: "¿Qué te quita el sueño?",
+    step1title: "Cuenta tu situación", step1desc: "Llena los detalles sobre tu situación de vida. Mientras más honesto, mejor.",
+    step2title: "Vista previa IA gratis", step2desc: "Obtén un adelanto personalizado — gratis. Ve si la IA realmente te entiende.",
+    step3title: "Paga para desbloquear ($1)", step3desc: "Un dólar vía Gumroad. Obtén tu reporte completo y brutalmente honesto.",
+    step4title: "Comparte tu puntaje", step4desc: "Obtén una tarjeta compartible. Publícala. Compara con amigos. Hazte viral.",
+    freePreviewBtn: "Vista previa gratis", unlockBtn: "Desbloquear reporte completo", iPaidBtn: "Ya pagué — Mostrar reporte",
+    freeLbl: "GRATIS", codeLabel: "🎁 ¿Tienes un código gratis?", codePlaceholder: "Ingresa código", codeBtn: "Aplicar",
+    loadingText: "Analizando tu situación...", previewLabel: "VISTA PREVIA",
+    shareTwitter: "Tuitear", shareWhatsApp: "WhatsApp", shareLinkedIn: "LinkedIn", shareCopy: "Copiar",
+    footerDesc: "Herramientas de vida IA sin endulzar. Análisis honesto de tu carrera, dinero, relaciones y decisiones.",
+    chatPlaceholder: "Escribe algo...", chatSend: "Enviar",
+    chatWelcome: "¡Hola! Estoy aquí para escucharte. ¿Qué tienes en mente? Sin juicio. 💬",
+    proTitle: "HumanLens Pro", proDesc: "Acceso ilimitado a todas las herramientas. Sin cargos por reporte. Análisis IA prioritario.",
+    emailPlaceholder: "tu@email.com", emailBtn: "Suscribirse",
+    emailH2: "Obtén tu Guía de Supervivencia 2025 gratis",
+    emailSub: "El manual de despidos, guiones de salario y plan de recuperación del burnout — directo a tu correo.",
+    emailSuccess: "🎉 ¡Estás dentro! Revisa tu correo pronto."
+  },
+  de: {
+    eyebrow: "KI-LEBENSTOOLS · OHNE BESCHÖNIGUNG",
+    h1line1: "DEIN LEBEN,", h1line2: "BRUTAL", h1line3: "ANALYSIERT.",
+    heroSub: "HumanLens nutzt KI für schonungslos ehrliche Analysen deiner Karriere, Finanzen, Beziehungen und Lebensentscheidungen. Kein Therapeuten-Geplauder. Keine toxische Positivität. Nur Wahrheit.",
+    tryFree: "Kostenlose Vorschau →", howItWorks: "So funktioniert's",
+    pickCrisis: "WÄHLE DEINE KRISE", sectionH2: "Was hält dich nachts wach?",
+    step1title: "Erzähle deine Situation", step1desc: "Fülle Details zu deiner Lebenssituation aus. Je ehrlicher, desto besser.",
+    step2title: "Kostenlose KI-Vorschau", step2desc: "Erhalte einen personalisierten Teaser — kostenlos. Schau, ob die KI dich versteht.",
+    step3title: "Zahle zum Freischalten ($1)", step3desc: "Ein Dollar über Gumroad. Erhalte deinen vollständigen, ehrlichen KI-Bericht.",
+    step4title: "Teile deinen Score", step4desc: "Erhalte eine teilbare Score-Karte. Poste sie. Vergleiche mit Freunden.",
+    freePreviewBtn: "Kostenlose Vorschau", unlockBtn: "Vollständigen Bericht freischalten", iPaidBtn: "Ich habe bezahlt — Bericht zeigen",
+    freeLbl: "KOSTENLOS", codeLabel: "🎁 Hast du einen Gratis-Code?", codePlaceholder: "Code eingeben", codeBtn: "Anwenden",
+    loadingText: "Analyse läuft...", previewLabel: "VORSCHAU",
+    shareTwitter: "Twittern", shareWhatsApp: "WhatsApp", shareLinkedIn: "LinkedIn", shareCopy: "Kopieren",
+    footerDesc: "KI-Lebenstools ohne Beschönigung. Ehrliche Analyse deiner Karriere, Finanzen, Beziehungen und Entscheidungen.",
+    chatPlaceholder: "Schreib etwas...", chatSend: "Senden",
+    chatWelcome: "Hey! Ich bin hier zum Zuhören. Was beschäftigt dich? Kein Urteil. 💬",
+    proTitle: "HumanLens Pro", proDesc: "Unbegrenzter Zugang zu allen Tools. Keine Gebühren pro Bericht. Priorisierte KI-Analyse.",
+    emailPlaceholder: "du@email.de", emailBtn: "Abonnieren",
+    emailH2: "Hol dir deinen kostenlosen 2025 Survival Guide",
+    emailSub: "Das Kündigungs-Playbook, Gehalts-Scripts und Burnout-Recovery-Plan — kostenlos in dein Postfach.",
+    emailSuccess: "🎉 Du bist dabei! Schau bald in dein Postfach."
+  },
+  pt: {
+    eyebrow: "FERRAMENTAS DE VIDA IA · SEM AÇÚCAR",
+    h1line1: "SUA VIDA,", h1line2: "BRUTALMENTE", h1line3: "ANALISADA.",
+    heroSub: "O HumanLens usa IA para te dar uma análise dolorosamente honesta da sua carreira, dinheiro, relacionamentos e decisões de vida. Sem papo de terapeuta. Sem positividade tóxica. Só verdade.",
+    tryFree: "Prévia gratuita →", howItWorks: "Como funciona",
+    pickCrisis: "ESCOLHA SUA CRISE", sectionH2: "O que te tira o sono?",
+    step1title: "Conte sua situação", step1desc: "Preencha detalhes sobre sua situação. Quanto mais honesto, melhor.",
+    step2title: "Prévia IA gratuita", step2desc: "Receba um teaser personalizado — grátis. Veja se a IA realmente te entende.",
+    step3title: "Pague para desbloquear ($1)", step3desc: "Um dólar via Gumroad. Receba seu relatório completo e brutalmente honesto.",
+    step4title: "Compartilhe seu score", step4desc: "Receba um cartão compartilhável. Poste. Compare com amigos. Viralize.",
+    freePreviewBtn: "Prévia gratuita", unlockBtn: "Desbloquear relatório completo", iPaidBtn: "Eu paguei — Mostrar relatório",
+    freeLbl: "GRÁTIS", codeLabel: "🎁 Tem um código grátis?", codePlaceholder: "Digite o código", codeBtn: "Aplicar",
+    loadingText: "Analisando sua situação...", previewLabel: "PRÉVIA",
+    shareTwitter: "Tweetar", shareWhatsApp: "WhatsApp", shareLinkedIn: "LinkedIn", shareCopy: "Copiar",
+    footerDesc: "Ferramentas de vida IA sem açúcar. Análise honesta da sua carreira, dinheiro, relacionamentos e decisões.",
+    chatPlaceholder: "Digite algo...", chatSend: "Enviar",
+    chatWelcome: "Oi! Estou aqui para ouvir. O que está na sua cabeça? Sem julgamento. 💬",
+    proTitle: "HumanLens Pro", proDesc: "Acesso ilimitado a todas as ferramentas. Sem taxa por relatório. Análise IA prioritária.",
+    emailPlaceholder: "voce@email.com", emailBtn: "Inscrever-se",
+    emailH2: "Receba seu Guia de Sobrevivência 2025 grátis",
+    emailSub: "O manual de demissões, scripts de salário e plano de recuperação de burnout — entregues grátis no seu email.",
+    emailSuccess: "🎉 Você entrou! Confira sua caixa de entrada em breve."
+  },
+  fr: {
+    eyebrow: "OUTILS DE VIE IA · SANS FILTRE",
+    h1line1: "VOTRE VIE,", h1line2: "BRUTALEMENT", h1line3: "ANALYSÉE.",
+    heroSub: "HumanLens utilise l'IA pour vous donner une analyse brutalement honnête de votre carrière, argent, relations et décisions de vie. Pas de blabla de thérapeute. Pas de positivité toxique. Juste la vérité.",
+    tryFree: "Aperçu gratuit →", howItWorks: "Comment ça marche",
+    pickCrisis: "CHOISISSEZ VOTRE CRISE", sectionH2: "Qu'est-ce qui vous empêche de dormir?",
+    step1title: "Décrivez votre situation", step1desc: "Remplissez les détails de votre situation. Plus vous êtes honnête, mieux c'est.",
+    step2title: "Aperçu IA gratuit", step2desc: "Obtenez un teaser personnalisé — gratuit. Voyez si l'IA vous comprend vraiment.",
+    step3title: "Payez pour débloquer ($1)", step3desc: "Un dollar via Gumroad. Obtenez votre rapport complet et brutalement honnête.",
+    step4title: "Partagez votre score", step4desc: "Obtenez une carte partageable. Postez-la. Comparez avec vos amis.",
+    freePreviewBtn: "Aperçu gratuit", unlockBtn: "Débloquer rapport complet", iPaidBtn: "J'ai payé — Montrer le rapport",
+    freeLbl: "GRATUIT", codeLabel: "🎁 Vous avez un code gratuit?", codePlaceholder: "Entrez le code", codeBtn: "Appliquer",
+    loadingText: "Analyse en cours...", previewLabel: "APERÇU",
+    shareTwitter: "Tweeter", shareWhatsApp: "WhatsApp", shareLinkedIn: "LinkedIn", shareCopy: "Copier",
+    footerDesc: "Outils de vie IA sans filtre. Analyse honnête de votre carrière, argent, relations et décisions.",
+    chatPlaceholder: "Tapez quelque chose...", chatSend: "Envoyer",
+    chatWelcome: "Salut! Je suis là pour écouter. Qu'est-ce qui te préoccupe? Sans jugement. 💬",
+    proTitle: "HumanLens Pro", proDesc: "Accès illimité à tous les outils. Pas de frais par rapport. Analyse IA prioritaire.",
+    emailPlaceholder: "vous@email.com", emailBtn: "S'abonner",
+    emailH2: "Obtenez votre Guide de Survie 2025 gratuit",
+    emailSub: "Le playbook licenciement, les scripts salaire et le plan de récupération burnout — livrés gratuitement dans votre boîte mail.",
+    emailSuccess: "🎉 C'est fait! Vérifiez votre boîte de réception bientôt."
+  }
+};
+
+/* ==================== LANGUAGE DETECTION ==================== */
+let LANG = 'en';
+(function detectLang(){
+  const bl = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  if(bl.startsWith('es')) LANG='es';
+  else if(bl.startsWith('de')) LANG='de';
+  else if(bl.startsWith('pt')) LANG='pt';
+  else if(bl.startsWith('fr')) LANG='fr';
+  // Indian languages and English default to 'en'
+})();
+function t(key){ return (TX[LANG] && TX[LANG][key]) || TX.en[key] || key; }
+
+function setLang(lang){
+  LANG = lang;
+  document.querySelectorAll('.lang-flag').forEach(f=>f.classList.toggle('active',f.dataset.lang===lang));
+  applyTranslations();
+}
+
+function applyTranslations(){
+  const s = id => document.getElementById(id);
+  if(s('heroEyebrow')) s('heroEyebrow').textContent = t('eyebrow');
+  if(s('h1line1')) s('h1line1').textContent = t('h1line1');
+  if(s('h1line2')) s('h1line2').textContent = t('h1line2');
+  if(s('h1line3')) s('h1line3').textContent = t('h1line3');
+  if(s('heroSub')) s('heroSub').textContent = t('heroSub');
+  if(s('heroPrimary')) s('heroPrimary').textContent = t('tryFree');
+  if(s('toolsEyebrow')) s('toolsEyebrow').textContent = t('pickCrisis');
+  if(s('toolsH2')) s('toolsH2').textContent = t('sectionH2');
+  if(s('howH2')) s('howH2').textContent = t('howItWorks');
+  if(s('proTitle')) s('proTitle').textContent = t('proTitle');
+  if(s('proDesc')) s('proDesc').textContent = t('proDesc');
+  if(s('emailH2')) s('emailH2').textContent = t('emailH2');
+  if(s('emailSub')) s('emailSub').textContent = t('emailSub');
+  if(s('emailBtn')) s('emailBtn').textContent = t('emailBtn');
+  if(s('emailInput')) s('emailInput').placeholder = t('emailPlaceholder');
+  if(s('footerDesc')) s('footerDesc').textContent = t('footerDesc');
+  if(s('chatInput')) s('chatInput').placeholder = t('chatPlaceholder');
+  if(s('chatSend')) s('chatSend').textContent = t('chatSend');
+  if(s('codeLabel')) s('codeLabel').textContent = t('codeLabel');
+  if(s('freeCodeInput')) s('freeCodeInput').placeholder = t('codePlaceholder');
+  if(s('freeCodeBtn')) s('freeCodeBtn').textContent = t('codeBtn');
+  if(s('modalPreviewBtn')) s('modalPreviewBtn').textContent = t('freePreviewBtn');
+  if(s('loadingText')) s('loadingText').textContent = t('loadingText');
+  if(s('previewLabel')) s('previewLabel').textContent = t('previewLabel');
+  if(s('shareTw')) s('shareTw').textContent = t('shareTwitter');
+  if(s('shareWa')) s('shareWa').textContent = t('shareWhatsApp');
+  if(s('shareLi')) s('shareLi').textContent = t('shareLinkedIn');
+  if(s('shareCp')) s('shareCp').textContent = t('shareCopy');
+  // Rebuild how steps
+  buildHowSteps();
+}
+
+/* ==================== TOOL DATA ==================== */
+const TOOLS = [
+  {id:'layoff',color:'#FF3355',price:'$1',img:'img/layoff.jpg',title:'Am I Getting Laid Off?',desc:'AI analyzes your job security based on industry trends, company signals, and your role.',tags:['layoff risk 2025','will i get fired','job security AI'],tilt:-1.2},
+  {id:'salary',color:'#FFD60A',price:'$1',img:'img/salary.jpg',title:'Am I Being Underpaid?',desc:'Find out your real market value and get a negotiation script.',tags:['am i underpaid','salary check AI','pay gap'],tilt:0.8},
+  {id:'relship',color:'#CC44FF',price:'$1',img:'img/relship.jpg',title:'Is My Relationship Healthy?',desc:'Honest analysis of your relationship patterns and red flags.',tags:['toxic relationship quiz','red flags AI','relationship health'],tilt:-0.5},
+  {id:'burnout',color:'#FF6B2B',price:'$1',img:'img/burnout.jpg',title:'Am I Burning Out?',desc:'Measure your burnout level and get a personalized recovery plan.',tags:['burnout test online','am i burned out','stress level'],tilt:1.0},
+  {id:'debt',color:'#FF3355',price:'$1',img:'img/debt.jpg',title:'Am I in a Debt Trap?',desc:'AI calculates your debt stress score and escape plan.',tags:['debt trap EMI India','loan burden','debt calculator'],tilt:-0.8},
+  {id:'decide',color:'#3B82F6',price:'$1',img:'img/decide.jpg',title:'Should I Do This?',desc:'AI helps you think through any major life decision objectively.',tags:['should i quit my job AI','career change','life decision'],tilt:0.5},
+  {id:'friend',color:'#00BCD4',price:'FREE',img:'img/friend.jpg',title:'Just need someone to talk to?',desc:'A warm, honest AI friend. No judgment. No BS. Just here to listen.',tags:['AI friend','someone to talk to','lonely'],wide:true,tilt:0},
+  {id:'tariff',color:'#F5A623',price:'$2',img:'img/tariff.jpg',title:'Tariff Impact Calculator',desc:'See how new tariffs affect your imports, costs, and margins.',tags:['tariff calculator 2025','import duty','trade war'],tilt:-0.6},
+  {id:'visa',color:'#00E5A0',price:'$2',img:'img/visa.jpg',title:'My Visa Roadmap',desc:'AI-powered visa strategy based on your profile and goals.',tags:['India Canada visa 2025','visa roadmap','immigration AI'],tilt:0.9},
+  {id:'toxic',color:'#FF3355',price:'$2',img:'img/toxic.jpg',title:'Is My Workplace Toxic?',desc:'Assess your work environment and get a protection plan.',tags:['toxic boss signs','hostile workplace','work environment'],tilt:-1.0}
+];
+
+/* ==================== FORM FIELDS ==================== */
+const FIELDS = {
+  layoff:[
+    {name:'jobTitle',label:'Job Title',type:'text',placeholder:'e.g. Senior Software Engineer'},
+    {name:'company',label:'Company Name',type:'text',placeholder:'e.g. Meta, Infosys'},
+    {name:'industry',label:'Industry',type:'select',options:['Tech','Finance','Consulting','Healthcare','Retail','Manufacturing','Media','Education','Government','Other']},
+    {name:'companySize',label:'Company Size',type:'select',options:['Startup (<50)','SMB (50-500)','Mid (500-5000)','Enterprise (5000+)']},
+    {name:'yearsInRole',label:'Years in Role',type:'text',placeholder:'e.g. 3'},
+    {name:'mainTasks',label:'Main Tasks / Responsibilities',type:'textarea',placeholder:'What do you do day-to-day?'}
+  ],
+  salary:[
+    {name:'jobTitle',label:'Job Title',type:'text',placeholder:'e.g. Product Manager'},
+    {name:'yearsExp',label:'Years of Experience',type:'text',placeholder:'e.g. 5'},
+    {name:'location',label:'City & Country',type:'text',placeholder:'e.g. Bangalore, India'},
+    {name:'currentSalary',label:'Current Salary (annual)',type:'text',placeholder:'e.g. $85,000 or ₹15L'},
+    {name:'industry',label:'Industry',type:'select',options:['Tech','Finance','Consulting','Healthcare','Retail','Manufacturing','Media','Education','Government','Other']},
+    {name:'skills',label:'Key Skills',type:'text',placeholder:'e.g. Python, SQL, Leadership'}
+  ],
+  relship:[
+    {name:'type',label:'Relationship Type',type:'select',options:['Romantic Partner','Marriage','Friendship','Family','Colleague']},
+    {name:'duration',label:'Duration',type:'text',placeholder:'e.g. 2 years'},
+    {name:'good',label:"What's Good About It",type:'textarea',placeholder:'What you appreciate...'},
+    {name:'concerns',label:'Your Concerns',type:'textarea',placeholder:'What worries you...'}
+  ],
+  debt:[
+    {name:'income',label:'Monthly Income',type:'text',placeholder:'e.g. $5,000 or ₹80,000'},
+    {name:'emis',label:'Total Monthly EMIs / Loan Payments',type:'text',placeholder:'e.g. $2,000'},
+    {name:'expenses',label:'Essential Monthly Expenses',type:'text',placeholder:'e.g. $1,500'},
+    {name:'savings',label:'Total Savings',type:'text',placeholder:'e.g. $10,000'},
+    {name:'loans',label:'List All Loans',type:'textarea',placeholder:'e.g. Home loan: $200k @ 7%, Car: $15k @ 9%...'}
+  ],
+  burnout:[
+    {name:'role',label:'Job / Role',type:'text',placeholder:'e.g. Marketing Manager'},
+    {name:'hours',label:'Hours per Week',type:'text',placeholder:'e.g. 55'},
+    {name:'symptoms',label:'Symptoms You Notice',type:'textarea',placeholder:'e.g. Constant fatigue, dread on Sundays...'},
+    {name:'duration',label:'How Long Has This Been Going On?',type:'text',placeholder:'e.g. 6 months'},
+    {name:'lifeOutside',label:'Life Outside Work',type:'textarea',placeholder:'Hobbies, relationships, sleep quality...'}
+  ],
+  decide:[
+    {name:'decision',label:'The Decision',type:'textarea',placeholder:'What are you trying to decide?'},
+    {name:'whyWant',label:'Why Do You Want To?',type:'textarea',placeholder:'What pulls you toward it?'},
+    {name:'whyHesitate',label:'Why Are You Hesitating?',type:'textarea',placeholder:'What holds you back?'},
+    {name:'context',label:'Life Context',type:'textarea',placeholder:'Age, responsibilities, financial situation...'}
+  ],
+  tariff:[
+    {name:'product',label:'Product / Category',type:'text',placeholder:'e.g. Electronics, Steel, Textiles'},
+    {name:'source',label:'Source Country',type:'text',placeholder:'e.g. China'},
+    {name:'destination',label:'Destination Country',type:'text',placeholder:'e.g. United States'},
+    {name:'annualValue',label:'Annual Import Value',type:'text',placeholder:'e.g. $500,000'},
+    {name:'margin',label:'Current Profit Margin',type:'text',placeholder:'e.g. 15%'}
+  ],
+  visa:[
+    {name:'currentCountry',label:'Current Country',type:'text',placeholder:'e.g. India'},
+    {name:'targetCountry',label:'Target Country',type:'text',placeholder:'e.g. Canada'},
+    {name:'profession',label:'Profession',type:'text',placeholder:'e.g. Software Developer'},
+    {name:'education',label:'Education Level',type:'select',options:["High School","Bachelor's","Master's","PhD","Other"]},
+    {name:'purpose',label:'Purpose',type:'select',options:['Work','Study','Permanent Residency','Business','Family Reunion','Other']},
+    {name:'family',label:'Family Status',type:'select',options:['Single','Married, no kids','Married with kids','Dependents']}
+  ],
+  toxic:[
+    {name:'role',label:'Your Role',type:'text',placeholder:'e.g. Junior Designer'},
+    {name:'boss',label:'Describe Your Boss / Management',type:'textarea',placeholder:'How does your boss behave?'},
+    {name:'environment',label:'Work Environment',type:'textarea',placeholder:'Culture, team dynamics, policies...'},
+    {name:'affecting',label:'How Is It Affecting You?',type:'textarea',placeholder:'Mental health, performance, personal life...'}
+  ]
+};
+
+/* ==================== REPORT SECTIONS ==================== */
+const REPORT_SECTIONS = {
+  layoff: "1. RISK SCORE (out of 100)\n2. TOP 3 VULNERABILITY FACTORS\n3. AUTOMATION EXPOSURE\n4. 90-DAY SURVIVAL PLAN\n5. SKILLS TO ADD NOW\n6. YOUR SHARE LINE (a punchy one-liner with their score)",
+  salary: "1. MARKET RATE RANGE\n2. UNDERPAID ESTIMATE (% and $)\n3. WHY THIS GAP EXISTS\n4. NEGOTIATION SCRIPT (word-for-word)\n5. SKILLS WORTH $5K+ EACH\n6. YOUR SHARE LINE",
+  relship: "1. OVERALL HEALTH (score out of 100)\n2. GREEN FLAGS\n3. RED FLAGS\n4. WHAT YOU'RE NORMALISING\n5. PATTERNS THAT WORSEN OVER TIME\n6. YOUR OPTIONS\n7. YOUR SHARE LINE",
+  debt: "1. DEBT STRESS SCORE (out of 100)\n2. THE REAL MATH\n3. DANGER SIGNALS\n4. LOAN PRIORITY ORDER\n5. 6-MONTH ESCAPE PLAN\n6. IF NOTHING CHANGES\n7. YOUR SHARE LINE",
+  burnout: "1. BURNOUT LEVEL (out of 100)\n2. BODY SIGNALS YOU'RE IGNORING\n3. SPECIFIC DRAINS\n4. IMMEDIATE RELIEF (this week)\n5. 30-DAY RECOVERY PLAN\n6. WHEN TO SEEK PROFESSIONAL HELP\n7. YOUR SHARE LINE",
+  decide: "1. THE REAL QUESTION (what they're actually deciding)\n2. EVIDENCE FOR\n3. HIDDEN REASON FOR HESITATION\n4. IF YOU DO IT (realistic scenario)\n5. IF YOU DON'T (realistic scenario)\n6. TIMING ANALYSIS\n7. HONEST LEAN (the AI's honest opinion)\n8. YOUR SHARE LINE",
+  tariff: "1. CURRENT TARIFF RATE\n2. DOLLAR IMPACT ON YOUR BUSINESS\n3. WORST CASE SCENARIO\n4. ALTERNATIVE SOURCE COUNTRIES\n5. IMMEDIATE ACTIONS\n6. 6-MONTH STRATEGY\n7. YOUR SHARE LINE",
+  visa: "1. BEST VISA CATEGORY\n2. REALISTIC TIMELINE\n3. APPROVAL RATE FOR YOUR PROFILE\n4. COST ESTIMATE\n5. DOCUMENT CHECKLIST\n6. TOP REJECTION REASONS TO AVOID\n7. NEXT 3 ACTIONS\n8. YOUR SHARE LINE",
+  toxic: "1. TOXICITY ASSESSMENT (score out of 100)\n2. TOXIC PATTERNS IDENTIFIED\n3. LONG-TERM EFFECTS ON YOU\n4. YOUR LEGAL RIGHTS\n5. YOUR OPTIONS (stay vs leave)\n6. SELF-PROTECTION STRATEGIES\n7. EXIT PLAN IF NEEDED\n8. YOUR SHARE LINE"
+};
+
+/* ==================== SHARE TEXTS ==================== */
+const SHARE_TEXTS = {
+  layoff: s => `My layoff risk score: ${s}/100 — HumanLens AI just analyzed my job security. 😬 Get yours:`,
+  salary: s => `I might be ${s}% underpaid — HumanLens AI just checked my salary. 💸 Check yours:`,
+  relship: s => `My relationship health: ${s}/100 — HumanLens AI doesn't sugarcoat. 💜 Check yours:`,
+  debt: s => `My debt stress score: ${s}/100 — HumanLens AI gave me a wake-up call. 💰 Check yours:`,
+  burnout: s => `My burnout level: ${s}/100 — HumanLens AI just diagnosed me. 🔥 Check yours:`,
+  decide: s => `HumanLens AI helped me decide — honest lean: ${s}. 🎯 Try it:`,
+  tariff: s => `Tariff impact on my business: ${s} — HumanLens AI calculated it. 📦 Calculate yours:`,
+  visa: s => `My visa approval chance: ${s}% — HumanLens AI mapped my roadmap. ✈️ Get yours:`,
+  toxic: s => `My workplace toxicity: ${s}/100 — HumanLens AI confirmed what I felt. 🏢 Check yours:`
+};
+
+/* ==================== STATE ==================== */
+let currentTool = null;
+let currentPreview = '';
+let currentReport = '';
+let hasFreecode = false;
+let chatHistory = [];
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
+
+/* ==================== CUSTOM CURSOR ==================== */
+const dot = document.getElementById('cursorDot');
+const ring = document.getElementById('cursorRing');
+document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; dot.style.left = mouseX + 'px'; dot.style.top = mouseY + 'px'; });
+function animateRing(){ ringX += (mouseX - ringX) * 0.1; ringY += (mouseY - ringY) * 0.1; ring.style.left = ringX + 'px'; ring.style.top = ringY + 'px'; requestAnimationFrame(animateRing); }
+animateRing();
+
+document.addEventListener('mouseover', e => {
+  const el = e.target.closest('a,button,.tool-card,.hero-chip,.lang-flag,.sg-btn');
+  if(el){ dot.classList.add('hover'); ring.classList.add('hover'); }
+});
+document.addEventListener('mouseout', e => {
+  const el = e.target.closest('a,button,.tool-card,.hero-chip,.lang-flag,.sg-btn');
+  if(el){ dot.classList.remove('hover'); ring.classList.remove('hover'); }
+});
+
+/* ==================== TOAST ==================== */
+function showToast(msg){
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'), 3000);
+}
+
+/* ==================== BUILD TOOLS GRID ==================== */
+function buildToolsGrid(){
+  const grid = document.getElementById('toolsGrid');
+  grid.innerHTML = '';
+  TOOLS.forEach((tool,i) => {
+    const card = document.createElement('div');
+    card.className = 'tool-card' + (tool.wide ? ' wide' : '');
+    card.style.setProperty('--tilt', tool.tilt + 'deg');
+    card.style.setProperty('--tc', tool.color);
+    card.onclick = () => openModal(tool.id);
+    card.innerHTML = `
+      <span class="tool-panel-num">#${String(i+1).padStart(2,'0')}</span>
+      <span class="tool-price" style="color:${tool.color}">${tool.price}</span>
+      <img class="tool-card-img" src="${tool.img}" alt="${tool.title}" loading="lazy">
+      <div class="tool-card-body">
+        <span class="tool-speech" style="background:${tool.color}20;color:${tool.color}">${tool.id === 'friend' ? 'CHAT' : 'REPORT'}</span>
+        <div class="tool-title">${tool.title}</div>
+        <div class="tool-desc">${tool.desc}</div>
+        <div class="tool-tags">${tool.tags.map(t=>`<span class="tool-tag">${t}</span>`).join('')}</div>
+      </div>
+      <div class="tool-pow">POW!</div>
+    `;
+    grid.appendChild(card);
+  });
+}
+
+/* ==================== BUILD HOW STEPS ==================== */
+function buildHowSteps(){
+  const grid = document.getElementById('howGrid');
+  if(!grid) return;
+  const steps = [
+    {num:'01',title:t('step1title'),desc:t('step1desc')},
+    {num:'02',title:t('step2title'),desc:t('step2desc')},
+    {num:'03',title:t('step3title'),desc:t('step3desc')},
+    {num:'04',title:t('step4title'),desc:t('step4desc')}
+  ];
+  grid.innerHTML = steps.map(s=>`
+    <div class="how-step">
+      <div class="how-num">${s.num}</div>
+      <div class="how-step-title">${s.title}</div>
+      <div class="how-step-desc">${s.desc}</div>
+    </div>
+  `).join('');
+}
+
+/* ==================== BUILD AFFILIATES ==================== */
+function buildAffiliates(){
+  const affiliates = [
+    {emoji:'🧠',name:'BetterHelp',desc:'Talk to a real therapist when AI isn\'t enough.',link:'#'},
+    {emoji:'🎓',name:'Coursera',desc:'Level up your skills — thousands of courses from top universities.',link:'#'},
+    {emoji:'🔒',name:'NordVPN',desc:'Protect your data while researching visa and immigration options.',link:'#'},
+    {emoji:'📋',name:'Notion',desc:'Organize your life — plans, goals, and decisions in one place.',link:'#'},
+    {emoji:'🧘',name:'Calm',desc:'Manage anxiety daily with guided meditation and sleep stories.',link:'#'},
+    {emoji:'💱',name:'Wise',desc:'Send money abroad cheaper — transparent fees, real exchange rates.',link:'#'}
+  ];
+  const grid = document.getElementById('affiliateGrid');
+  grid.innerHTML = affiliates.map(a=>`
+    <div class="affiliate-card">
+      <div class="affiliate-logo">${a.emoji}</div>
+      <div class="affiliate-name">${a.name}</div>
+      <div class="affiliate-desc">${a.desc}</div>
+      <a href="${a.link}" target="_blank" class="affiliate-link">Learn more →</a>
+    </div>
+  `).join('');
+}
+
+/* ==================== BUILD TWEETS ==================== */
+function buildTweets(){
+  const tweets = [
+    {avatar:'🔥',name:'Priya S.',handle:'@priya_dev',body:'HumanLens told me I have a 78% layoff risk. I updated my resume that night. Got an offer 2 weeks later. This tool is scary accurate.'},
+    {avatar:'💰',name:'Jake M.',handle:'@jake_money',body:'Found out I was 34% underpaid. Used the negotiation script word-for-word. Got a $12K raise. Best dollar I ever spent.'},
+    {avatar:'💜',name:'Rina K.',handle:'@rina_k',body:'The relationship tool told me things my friends were too nice to say. Painful but exactly what I needed to hear.'},
+    {avatar:'🧠',name:'Carlos D.',handle:'@carlos_pm',body:'Burnout score: 89/100. I thought I was just tired. HumanLens showed me I was 3 months from a breakdown. Taking action now.'},
+    {avatar:'💸',name:'Aarav P.',handle:'@aarav_fin',body:'Debt stress score: 72. The escape plan actually made sense. Not just generic advice — specific to my loans and income.'},
+    {avatar:'🎯',name:'Sophie L.',handle:'@sophie_career',body:'Was agonizing over quitting my job for 6 months. HumanLens decision tool laid it out so clearly. I quit. Best decision ever.'},
+    {avatar:'📦',name:'Mike T.',handle:'@mike_import',body:'The tariff calculator showed me I was about to lose $45K annually. Switched suppliers. Saved my business.'},
+    {avatar:'✈️',name:'Neha R.',handle:'@neha_visa',body:'Visa roadmap tool gave me a step-by-step plan for Canada PR. My immigration lawyer said the advice was spot-on.'}
+  ];
+  const track = document.getElementById('tweetsTrack');
+  const html = tweets.map(tw=>`
+    <div class="tweet-card">
+      <div class="tweet-header">
+        <div class="tweet-avatar">${tw.avatar}</div>
+        <div><div class="tweet-name">${tw.name}</div><div class="tweet-handle">${tw.handle}</div></div>
+      </div>
+      <div class="tweet-body">${tw.body}</div>
+    </div>
+  `).join('');
+  track.innerHTML = html + html; // duplicate for infinite scroll
+}
+
+/* ==================== BUILD FAQ ==================== */
+function buildFAQ(){
+  const faqs = [
+    {q:'How does HumanLens work?',a:'You fill in details about your specific situation — job, salary, relationship, etc. Our AI analyzes your data in real-time and generates a personalized report with scores, insights, and actionable steps. You get a free preview first, then pay $1-$2 for the full report.'},
+    {q:'Is my data stored anywhere?',a:'No. HumanLens processes your data in real-time and does not store personal information on any server. Your data is sent directly to the AI, the report is generated, and nothing is saved. We take privacy seriously.'},
+    {q:'How accurate are the AI reports?',a:'Our reports are generated by advanced AI trained on extensive datasets. While they provide sharp, personalized insights, they are not a substitute for professional legal, financial, or medical advice. Think of it as a brutally honest friend with data.'},
+    {q:'Can I use HumanLens for free?',a:'Yes! Every tool offers a free AI-generated preview — a personalized 2-3 sentence insight about your situation. The full detailed report with scores, plans, and scripts costs $1-$2. The AI Friend chat tool is completely free.'},
+    {q:'What payment methods do you accept?',a:'Payments are processed through Gumroad, which accepts all major credit/debit cards, PayPal, and Apple Pay. You pay once per report — no subscriptions required (unless you choose Pro).'},
+    {q:'Which countries does HumanLens work in?',a:'HumanLens works globally. Our AI adapts to your local context — salary data, visa requirements, labor laws, and cultural norms. We have users in 38+ countries and support multiple languages.'}
+  ];
+  const grid = document.getElementById('faqGrid');
+  grid.innerHTML = faqs.map(f=>`
+    <div class="faq-item">
+      <div class="faq-q">${f.q}</div>
+      <div class="faq-a">${f.a}</div>
+    </div>
+  `).join('');
+}
+
+/* ==================== PRICING TOGGLE ==================== */
+function togglePricing(period){
+  document.querySelectorAll('.pricing-toggle-btn').forEach(b=>b.classList.toggle('active',b.dataset.period===period));
+  const amt = document.getElementById('pricingAmount');
+  const per = document.getElementById('pricingPeriod');
+  const tag = document.getElementById('popularTag');
+  const card = document.querySelector('.pricing-card');
+  if(period==='monthly'){ amt.textContent='$9'; per.textContent='/month'; tag.style.display='none'; card.classList.remove('popular'); }
+  else{ amt.textContent='$29'; per.textContent='/year'; tag.style.display='block'; card.classList.add('popular'); }
+}
+
+/* ==================== EMAIL CAPTURE ==================== */
+function handleEmailSubmit(e){
+  e.preventDefault();
+  const email = document.getElementById('emailInput').value;
+  if(!email) return;
+  // Store in memory (owner will connect Mailchimp later)
+  if(!window._hlEmails) window._hlEmails = [];
+  window._hlEmails.push({email, date: new Date().toISOString()});
+  console.log('Email captured:', email);
+  document.getElementById('emailForm').style.display='none';
+  document.getElementById('emailSuccess').style.display='block';
+  document.getElementById('emailSuccess').textContent = t('emailSuccess');
+  showToast('Welcome to the HumanLens community!');
+}
+
+/* ==================== SCROLL TO TOOLS ==================== */
+function scrollToTools(){
+  document.getElementById('tools').scrollIntoView({behavior:'smooth'});
+}
+
+/* ==================== MINI STRESS GAME ==================== */
+const SG_QUESTIONS = [
+  {q:'Do you dread Monday mornings?', a:'Absolutely', b:'Not really', scoreA:20, scoreB:5},
+  {q:'Have you cried because of work or money in the last month?', a:'Yes', b:'No', scoreA:25, scoreB:5},
+  {q:'Do you check your phone within 5 min of waking up?', a:'Every day', b:'Sometimes', scoreA:15, scoreB:5},
+  {q:'Is your sleep affected by stress?', a:'Badly', b:"I'm fine", scoreA:20, scoreB:5},
+  {q:'Do you feel stuck in life right now?', a:'Completely', b:'Not at all', scoreA:20, scoreB:5}
+];
+let sgIndex = 0, sgScore = 0;
+
+function initStressGame(){
+  sgIndex = 0; sgScore = 0;
+  document.getElementById('sgResult').style.display='none';
+  document.getElementById('sgBtns').style.display='flex';
+  document.getElementById('sgQuestion').style.display='block';
+  renderSGProgress();
+  renderSGQuestion();
+}
+
+function renderSGProgress(){
+  const prog = document.getElementById('sgProgress');
+  prog.innerHTML = SG_QUESTIONS.map((_,i)=>{
+    let cls = 'sg-dot';
+    if(i < sgIndex) cls += ' done';
+    else if(i === sgIndex) cls += ' active';
+    return `<span class="${cls}"></span>`;
+  }).join('');
+}
+
+function renderSGQuestion(){
+  if(sgIndex >= SG_QUESTIONS.length){ showSGResult(); return; }
+  const q = SG_QUESTIONS[sgIndex];
+  document.getElementById('sgQuestion').textContent = q.q;
+  const btnA = document.getElementById('sgBtnA');
+  const btnB = document.getElementById('sgBtnB');
+  btnA.textContent = q.a;
+  btnB.textContent = q.b;
+  btnA.onclick = () => { sgScore += q.scoreA; sgIndex++; renderSGProgress(); renderSGQuestion(); };
+  btnB.onclick = () => { sgScore += q.scoreB; sgIndex++; renderSGProgress(); renderSGQuestion(); };
+}
+
+function showSGResult(){
+  document.getElementById('sgBtns').style.display='none';
+  document.getElementById('sgQuestion').style.display='none';
+  const result = document.getElementById('sgResult');
+  result.style.display='block';
+  const score = document.getElementById('sgScore');
+  const label = document.getElementById('sgScoreLabel');
+  let color, text;
+  if(sgScore <= 30){ color='#00E5A0'; text='Low Stress — You\'re doing okay'; }
+  else if(sgScore <= 60){ color='#FFD60A'; text='Moderate Stress — Watch out'; }
+  else{ color='#FF3355'; text='High Stress — You need this'; }
+  score.textContent = sgScore + '/100';
+  score.style.color = color;
+  label.textContent = text;
+  // Confetti
+  spawnConfetti(result);
+}
+
+function spawnConfetti(container){
+  const colors = ['#FF3355','#FFD60A','#CC44FF','#00E5A0','#3B82F6','#FF6B2B'];
+  for(let i=0;i<30;i++){
+    const piece = document.createElement('div');
+    piece.className = 'confetti-piece';
+    piece.style.background = colors[Math.floor(Math.random()*colors.length)];
+    piece.style.left = Math.random()*100+'%';
+    piece.style.top = '40%';
+    piece.style.setProperty('--cx', (Math.random()*200-100)+'px');
+    container.appendChild(piece);
+    setTimeout(()=>piece.remove(), 1500);
+  }
+}
+
+document.getElementById('sgRetry').onclick = initStressGame;
+document.getElementById('sgTweet').onclick = () => {
+  const text = encodeURIComponent(`My stress score: ${sgScore}/100 — took the HumanLens quick stress check. How stressed are you? 😬`);
+  window.open(`https://twitter.com/intent/tweet?text=${text}&url=${encodeURIComponent('https://humanlens.co')}`, '_blank');
+};
+
+/* ==================== MODAL ==================== */
+function openModal(toolId){
+  currentTool = toolId;
+  hasFreecode = false;
+  const overlay = document.getElementById('modalOverlay');
+  const tool = TOOLS.find(t=>t.id===toolId);
+  if(!tool) return;
+
+  document.getElementById('modalTitle').textContent = tool.title;
+  document.getElementById('modalTitle').style.color = tool.color;
+  document.getElementById('modalSub').textContent = tool.price === 'FREE' ? 'Free tool — no payment needed' : `Full report: ${tool.price} via Gumroad`;
+
+  // Reset all
+  document.getElementById('modalForm').innerHTML = '';
+  document.getElementById('modalPreviewBox').style.display='none';
+  document.getElementById('modalUnlockBtn').style.display='none';
+  document.getElementById('modalPaidBtn').style.display='none';
+  document.getElementById('modalReport').style.display='none';
+  document.getElementById('shareCard').style.display='none';
+  document.getElementById('modalLoading').style.display='none';
+  document.getElementById('modalPreviewBtn').style.display='block';
+  document.getElementById('chatContainer').style.display='none';
+
+  if(toolId === 'friend'){
+    // Show chat UI
+    document.getElementById('freeCodeBox').style.display='none';
+    document.getElementById('modalPreviewBtn').style.display='none';
+    document.getElementById('chatContainer').style.display='flex';
+    chatHistory = [{role:'assistant',content:t('chatWelcome')}];
+    renderChat();
+  } else {
+    document.getElementById('freeCodeBox').style.display='block';
+    document.getElementById('chatContainer').style.display='none';
+    // Build form fields
+    buildModalForm(toolId);
+  }
+
+  overlay.classList.add('open');
+  overlay.scrollTop = 0;
+
+  // Check URL param
+  const params = new URLSearchParams(window.location.search);
+  if(params.get('paid') === toolId){
+    document.getElementById('modalPaidBtn').style.display='block';
+  }
+}
+
+function closeModal(){
+  document.getElementById('modalOverlay').classList.remove('open');
+  currentTool = null;
+}
+
+document.getElementById('modalClose').onclick = closeModal;
+document.getElementById('modalOverlay').onclick = e => { if(e.target === document.getElementById('modalOverlay')) closeModal(); };
+document.addEventListener('keydown', e => { if(e.key === 'Escape') closeModal(); });
+
+function buildModalForm(toolId){
+  const fields = FIELDS[toolId];
+  if(!fields) return;
+  const form = document.getElementById('modalForm');
+  form.innerHTML = fields.map(f => {
+    let input;
+    if(f.type === 'textarea'){
+      input = `<textarea name="${f.name}" placeholder="${f.placeholder||''}" rows="3"></textarea>`;
+    } else if(f.type === 'select'){
+      input = `<select name="${f.name}"><option value="">Select...</option>${f.options.map(o=>`<option value="${o}">${o}</option>`).join('')}</select>`;
+    } else {
+      input = `<input type="text" name="${f.name}" placeholder="${f.placeholder||''}">`;
+    }
+    return `<div class="modal-field"><label>${f.label}</label>${input}</div>`;
+  }).join('');
+}
+
+/* ==================== FREE CODE ==================== */
+function validateFreeCode(){
+  const code = document.getElementById('freeCodeInput').value.trim().toUpperCase();
+  if(code === CFG.FREE_CODE){
+    hasFreecode = true;
+    showToast('Free code applied! You get full access.');
+    document.getElementById('freeCodeBox').style.background='rgba(0,229,160,.08)';
+    document.getElementById('freeCodeBox').style.borderColor='rgba(0,229,160,.3)';
+  } else {
+    showToast('Invalid code. Try again.');
+  }
+}
+
+/* ==================== AI INTEGRATION ==================== */
+async function callAI(prompt, isShort){
+  const response = await fetch("https://api.anthropic.com/v1/messages", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "x-api-key": CFG.KEY,
+      "anthropic-version": "2023-06-01",
+      "anthropic-dangerous-direct-browser-access": "true"
+    },
+    body: JSON.stringify({
+      model: "claude-sonnet-4-20250514",
+      max_tokens: isShort ? 250 : 1600,
+      messages: [{ role: "user", content: prompt }]
+    })
+  });
+  const data = await response.json();
+  if(data.error) throw new Error(data.error.message);
+  return data.content[0].text;
+}
+
+function getFormData(){
+  const form = document.getElementById('modalForm');
+  const data = {};
+  form.querySelectorAll('input,textarea,select').forEach(el => {
+    data[el.name] = el.value;
+  });
+  return data;
+}
+
+function formatFormData(data){
+  return Object.entries(data).map(([k,v]) => `${k}: ${v}`).join('\n');
+}
+
+/* ==================== PREVIEW ==================== */
+async function getPreview(){
+  const data = getFormData();
+  const tool = TOOLS.find(t=>t.id===currentTool);
+  if(!tool) return;
+
+  // Validate at least one field
+  const values = Object.values(data).filter(v=>v.trim());
+  if(values.length === 0){ showToast('Please fill in at least one field.'); return; }
+
+  document.getElementById('modalPreviewBtn').style.display='none';
+  document.getElementById('modalLoading').style.display='block';
+
+  const prompt = `You are HumanLens AI. Give ONE sharp personal 2-3 sentence insight about this person's ${tool.title} — specific to their exact situation, NOT generic. End with a hook that makes them want the full report. Data:\n${formatFormData(data)}\nNo lists. No headers. Direct and personal.`;
+
+  try {
+    const result = await callAI(prompt, true);
+    currentPreview = result;
+    document.getElementById('modalLoading').style.display='none';
+    document.getElementById('modalPreviewBox').style.display='block';
+    document.getElementById('modalPreviewText').textContent = result;
+
+    if(hasFreecode){
+      // Skip payment, go straight to full report
+      getFullReport();
+    } else {
+      const unlockBtn = document.getElementById('modalUnlockBtn');
+      unlockBtn.style.display='block';
+      unlockBtn.textContent = `${t('unlockBtn')} — ${tool.price}`;
+      unlockBtn.href = CFG.LINKS[currentTool] || '#';
+      document.getElementById('modalPaidBtn').style.display='block';
+      document.getElementById('modalPaidBtn').textContent = t('iPaidBtn');
+    }
+  } catch(err){
+    document.getElementById('modalLoading').style.display='none';
+    document.getElementById('modalPreviewBtn').style.display='block';
+    showToast('Error: ' + err.message);
+  }
+}
+
+/* ==================== FULL REPORT ==================== */
+async function getFullReport(){
+  const data = getFormData();
+  const tool = TOOLS.find(t=>t.id===currentTool);
+  if(!tool) return;
+
+  document.getElementById('modalUnlockBtn').style.display='none';
+  document.getElementById('modalPaidBtn').style.display='none';
+  document.getElementById('modalLoading').style.display='block';
+  document.getElementById('loadingText').textContent = t('loadingText');
+
+  const sections = REPORT_SECTIONS[currentTool] || '';
+  const prompt = `You are HumanLens AI. Write a complete ${tool.title} REPORT, specific to this exact person. Use ALL-CAPS numbered headers. Sections:\n${sections}\n\nBe brutally honest, specific, and actionable. Reference their exact data. No generic advice.\n\nUser data:\n${formatFormData(data)}`;
+
+  try {
+    const result = await callAI(prompt, false);
+    currentReport = result;
+    document.getElementById('modalLoading').style.display='none';
+    document.getElementById('modalReport').style.display='block';
+
+    // Format report with bold headers
+    const formatted = result.replace(/^(\d+\.\s+[A-Z][A-Z\s\-\/\(\)]+)/gm, '<strong>$1</strong>');
+    document.getElementById('modalReportContent').innerHTML = formatted;
+
+    // Build share card
+    buildShareCard(result, tool);
+  } catch(err){
+    document.getElementById('modalLoading').style.display='none';
+    showToast('Error: ' + err.message);
+    document.getElementById('modalPaidBtn').style.display='block';
+  }
+}
+
+/* ==================== SHARE CARD ==================== */
+function buildShareCard(report, tool){
+  // Extract score
+  const scoreMatch = report.match(/(\d{1,3})\s*(?:\/\s*100|out of 100|%)/i);
+  const score = scoreMatch ? parseInt(scoreMatch[1]) : null;
+  if(!score){ document.getElementById('shareCard').style.display='none'; return; }
+
+  document.getElementById('shareCard').style.display='block';
+  document.getElementById('shareScoreText').textContent = score + '/100';
+  document.getElementById('shareToolName').textContent = tool.title.toUpperCase();
+
+  // Build SVG donut
+  const pct = score / 100;
+  const r = 38, cx = 50, cy = 50;
+  const circ = 2 * Math.PI * r;
+  const offset = circ * (1 - pct);
+  let color = '#00E5A0';
+  if(score > 60) color = '#FF3355';
+  else if(score > 30) color = '#FFD60A';
+
+  document.getElementById('shareDonut').innerHTML = `
+    <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="rgba(255,255,255,.06)" stroke-width="6"/>
+    <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="6"
+      stroke-dasharray="${circ}" stroke-dashoffset="${offset}"
+      stroke-linecap="round" transform="rotate(-90 ${cx} ${cy})"
+      style="transition:stroke-dashoffset 1s ease"/>
+    <text x="${cx}" y="${cy}" text-anchor="middle" dominant-baseline="central"
+      fill="${color}" font-family="Syne" font-size="18" font-weight="900">${score}</text>
+  `;
+
+  // Store for sharing
+  window._shareScore = score;
+  window._shareTool = tool;
+}
+
+function shareTwitter(){
+  const s = window._shareScore, tool = window._shareTool;
+  if(!s || !tool) return;
+  const text = SHARE_TEXTS[tool.id] ? SHARE_TEXTS[tool.id](s) : `My score: ${s} — HumanLens AI`;
+  window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent('https://humanlens.co')}`, '_blank');
+}
+function shareWhatsApp(){
+  const s = window._shareScore, tool = window._shareTool;
+  if(!s || !tool) return;
+  const text = SHARE_TEXTS[tool.id] ? SHARE_TEXTS[tool.id](s) : `My score: ${s}`;
+  window.open(`https://wa.me/?text=${encodeURIComponent(text + ' https://humanlens.co')}`, '_blank');
+}
+function shareLinkedIn(){
+  window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://humanlens.co')}`, '_blank');
+}
+function shareCopy(){
+  const s = window._shareScore, tool = window._shareTool;
+  if(!s || !tool) return;
+  const text = SHARE_TEXTS[tool.id] ? SHARE_TEXTS[tool.id](s) + ' https://humanlens.co' : `My score: ${s} — https://humanlens.co`;
+  navigator.clipboard.writeText(text).then(()=>showToast('Copied to clipboard!')).catch(()=>showToast('Failed to copy'));
+}
+
+/* ==================== CHAT (AI FRIEND) ==================== */
+function renderChat(){
+  const container = document.getElementById('chatMessages');
+  container.innerHTML = chatHistory.map(m => {
+    return `<div class="chat-msg ${m.role === 'user' ? 'user' : 'ai'}">${m.content}</div>`;
+  }).join('');
+  container.scrollTop = container.scrollHeight;
+}
+
+async function sendChat(){
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if(!msg) return;
+  input.value = '';
+  chatHistory.push({role:'user', content:msg});
+  renderChat();
+
+  // Show typing indicator
+  const container = document.getElementById('chatMessages');
+  const typing = document.createElement('div');
+  typing.className = 'chat-msg ai typing';
+  typing.innerHTML = '<div class="typing-dots"><span>●</span><span>●</span><span>●</span></div>';
+  container.appendChild(typing);
+  container.scrollTop = container.scrollHeight;
+
+  const systemPrompt = "You are a warm, honest, non-judgmental AI friend. Talk like a real caring friend — use casual language, be empathetic but real. Keep responses 2-4 sentences. Ask follow-up questions to show you care. Never say you're an AI unless directly asked. Never give medical/legal advice — suggest professionals for serious issues.";
+  const messages = [{role:'user', content: systemPrompt + '\n\nConversation so far:\n' + chatHistory.map(m=>`${m.role}: ${m.content}`).join('\n') + '\n\nRespond as the friend:'}];
+
+  try {
+    const response = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-api-key": CFG.KEY,
+        "anthropic-version": "2023-06-01",
+        "anthropic-dangerous-direct-browser-access": "true"
+      },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-20250514",
+        max_tokens: 200,
+        messages: messages
+      })
+    });
+    const data = await response.json();
+    typing.remove();
+    if(data.error) throw new Error(data.error.message);
+    const reply = data.content[0].text;
+    chatHistory.push({role:'assistant', content:reply});
+    renderChat();
+  } catch(err){
+    typing.remove();
+    chatHistory.push({role:'assistant', content:"Sorry, I'm having trouble connecting right now. Try again in a moment? 💙"});
+    renderChat();
+  }
+}
+
+/* ==================== INTERSECTION OBSERVER ==================== */
+// Section reveals
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) entry.target.classList.add('visible');
+  });
+}, {threshold: 0.1});
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+// Number count-up
+let countedUp = false;
+const proofObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting && !countedUp){
+      countedUp = true;
+      animateCounters();
+    }
+  });
+}, {threshold: 0.3});
+
+function animateCounters(){
+  document.querySelectorAll('.proof-num[data-target]').forEach(el => {
+    const target = parseFloat(el.dataset.target);
+    const isDecimal = el.dataset.decimal === 'true';
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const duration = 2000;
+    const start = performance.now();
+
+    function update(now){
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3); // ease out cubic
+      const current = target * eased;
+      if(isDecimal){
+        el.textContent = prefix + current.toFixed(1) + suffix;
+      } else {
+        el.textContent = prefix + Math.floor(current).toLocaleString() + suffix;
+      }
+      if(progress < 1) requestAnimationFrame(update);
+    }
+    requestAnimationFrame(update);
+  });
+}
+
+/* ==================== GLITCH EFFECT ==================== */
+setInterval(() => {
+  const line1 = document.getElementById('h1line1');
+  if(line1){
+    line1.classList.add('glitch-active');
+    setTimeout(() => line1.classList.remove('glitch-active'), 300);
+  }
+}, 4000);
+
+/* ==================== URL PARAM HANDLING ==================== */
+(function handleURLParams(){
+  const params = new URLSearchParams(window.location.search);
+  const paid = params.get('paid');
+  if(paid && TOOLS.find(t=>t.id===paid)){
+    setTimeout(() => openModal(paid), 500);
+  }
+})();
+
+/* ==================== HERO CHIPS ==================== */
+document.querySelectorAll('.hero-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    const toolId = chip.dataset.tool;
+    if(toolId) openModal(toolId);
+  });
+});
+
+/* ==================== LANG FLAGS ==================== */
+document.addEventListener('click', e => {
+  if(e.target.classList.contains('lang-flag')){
+    setLang(e.target.dataset.lang);
+  }
+});
+
+/* ==================== INIT ==================== */
+buildToolsGrid();
+buildHowSteps();
+buildAffiliates();
+buildTweets();
+buildFAQ();
+initStressGame();
+applyTranslations();
+
+// Observe proof bar for counting
+const proofBar = document.getElementById('proofBar');
+if(proofBar) proofObserver.observe(proofBar);
+</script>
+</body>
+</html>
