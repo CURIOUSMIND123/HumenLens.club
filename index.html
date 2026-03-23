@@ -2171,12 +2171,8 @@ async function getPreview(){
       unlockBtn.style.display='block';
       unlockBtn.textContent = `${t('unlockBtn')} — ${tool.price}`;
       unlockBtn.href = CFG.LINKS[currentTool] || '#';
-      // Only show "I paid" button if URL contains valid payment confirmation param
-      const _paidParam = new URLSearchParams(window.location.search).get('paid');
-      if(_paidParam === currentTool){
-        document.getElementById('modalPaidBtn').style.display='block';
-        document.getElementById('modalPaidBtn').textContent = t('iPaidBtn');
-      }
+      document.getElementById('modalPaidBtn').style.display='block';
+      document.getElementById('modalPaidBtn').textContent = t('iPaidBtn');
     }
   } catch(err){
     document.getElementById('modalLoading').style.display='none';
