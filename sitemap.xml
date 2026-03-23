@@ -146,4 +146,78 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- ==================== BLOG PAGES ==================== -->
+
+  <!-- Blog Hub -->
+  <url>
+    <loc>https://humanlens.club/blog/</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Blog: Am I Getting Laid Off -->
+  <url>
+    <loc>https://humanlens.club/blog/am-i-getting-laid-off.html</loc>
+    <lastmod>2026-03-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Blog: Am I Being Underpaid -->
+  <url>
+    <loc>https://humanlens.club/blog/am-i-underpaid.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Blog: Burnout Symptoms & Recovery -->
+  <url>
+    <loc>https://humanlens.club/blog/burnout-symptoms-recovery.html</loc>
+    <lastmod>2026-03-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Blog: Toxic Workplace Signs -->
+  <url>
+    <loc>https://humanlens.club/blog/toxic-workplace-signs.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Blog: Relationship Red Flags -->
+  <url>
+    <loc>https://humanlens.club/blog/relationship-red-flags.html</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Debt Trap Signs -->
+  <url>
+    <loc>https://humanlens.club/blog/debt-trap-signs.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Visa Roadmap 2026 -->
+  <url>
+    <loc>https://humanlens.club/blog/visa-roadmap-2026.html</loc>
+    <lastmod>2026-03-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Tariff Impact 2026 -->
+  <url>
+    <loc>https://humanlens.club/blog/tariff-impact-2026.html</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

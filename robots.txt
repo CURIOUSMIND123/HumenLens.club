@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Allow: /blog/
 
 # Sitemap
 Sitemap: https://humanlens.club/sitemap.xml
@@ -9,3 +10,7 @@ Crawl-delay: 10
 
 # Disallow API endpoints from indexing
 Disallow: /api/
+
+# Disallow query-only pages (tools are SPA, canonical is /)
+# Allow crawlers to still reach them via sitemap
+Allow: /?tool=
