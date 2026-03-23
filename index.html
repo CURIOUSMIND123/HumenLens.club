@@ -2064,9 +2064,9 @@ function openModal(toolId){
   overlay.classList.add('open');
   overlay.scrollTop = 0;
 
-  // Check URL param
+  // Check URL param or localStorage (returning user who already clicked Gumroad)
   const params = new URLSearchParams(window.location.search);
-  if(params.get('paid') === toolId){
+  if(params.get('paid') === toolId || localStorage.getItem('hl_clicked_' + toolId)){
     document.getElementById('modalPaidBtn').style.display='block';
   }
 }
@@ -2171,8 +2171,17 @@ async function getPreview(){
       unlockBtn.style.display='block';
       unlockBtn.textContent = `${t('unlockBtn')} — ${tool.price}`;
       unlockBtn.href = CFG.LINKS[currentTool] || '#';
-      document.getElementById('modalPaidBtn').style.display='block';
-      document.getElementById('modalPaidBtn').textContent = t('iPaidBtn');
+      // Show "I paid" only if they previously clicked the Gumroad link
+      if(localStorage.getItem('hl_clicked_' + currentTool)){
+        document.getElementById('modalPaidBtn').style.display='block';
+        document.getElementById('modalPaidBtn').textContent = t('iPaidBtn');
+      }
+      unlockBtn.addEventListener('click', function onUnlock(){
+        localStorage.setItem('hl_clicked_' + currentTool, '1');
+        document.getElementById('modalPaidBtn').style.display='block';
+        document.getElementById('modalPaidBtn').textContent = t('iPaidBtn');
+        unlockBtn.removeEventListener('click', onUnlock);
+      }, {once: true});
     }
   } catch(err){
     document.getElementById('modalLoading').style.display='none';
