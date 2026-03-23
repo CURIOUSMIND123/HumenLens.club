@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://humanlens.club</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://humanlens.club"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://humanlens.club/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://humanlens.club/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://humanlens.club/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://humanlens.club/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://humanlens.club"/>
+    <image:image>
+      <image:loc>https://humanlens.club/img/hero.jpg</image:loc>
+      <image:title>HumanLens — AI Life Analysis Tools</image:title>
+      <image:caption>AI-powered tools for brutally honest life analysis</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Layoff Risk Tool -->
+  <url>
+    <loc>https://humanlens.club/?tool=layoff</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://humanlens.club/img/layoff.jpg</image:loc>
+      <image:title>Layoff Risk Calculator — Am I Getting Laid Off?</image:title>
+    </image:image>
+  </url>
+
+  <!-- Salary Truth Tool -->
+  <url>
+    <loc>https://humanlens.club/?tool=salary</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://humanlens.club/img/salary.jpg</image:loc>
+      <image:title>Am I Being Underpaid? Salary Gap Calculator</image:title>
+    </image:image>
+  </url>
+
+  <!-- Relationship Health Tool -->
+  <url>
+    <loc>https://humanlens.club/?tool=relship</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://humanlens.club/img/relship.jpg</image:loc>
+      <image:title>Relationship Health Check AI Tool</image:title>
+    </image:image>
+  </url>
+
+  <!-- Burnout Test Tool -->
+  <url>
+    <loc>https://humanlens.club/?tool=burnout</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://humanlens.club/img/burnout.jpg</image:loc>
+      <image:title>Burnout Level Test — Work Burnout Score</image:title>
+    </image:image>
+  </url>
+
+  <!-- Debt Trap Tool -->
+  <url>
+    <loc>https://humanlens.club/?tool=debt</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://humanlens.club/img/debt.jpg</image:loc>
+      <image:title>Debt Trap Analyzer — Is My Debt Sustainable?</image:title>
+    </image:image>
+  </url>
+
+  <!-- Decision Analyzer Tool -->
+  <url>
+    <loc>https://humanlens.club/?tool=decide</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://humanlens.club/img/decide.jpg</image:loc>
+      <image:title>AI Life Decision Analyzer — Should I Quit My Job?</image:title>
+    </image:image>
+  </url>
+
+  <!-- Tariff Impact Tool -->
+  <url>
+    <loc>https://humanlens.club/?tool=tariff</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://humanlens.club/img/tariff.jpg</image:loc>
+      <image:title>Tariff Impact Tool 2026 — How Tariffs Affect My Business</image:title>
+    </image:image>
+  </url>
+
+  <!-- Visa Roadmap Tool -->
+  <url>
+    <loc>https://humanlens.club/?tool=visa</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://humanlens.club/img/visa.jpg</image:loc>
+      <image:title>AI Visa Roadmap Generator — Best Visa Strategy</image:title>
+    </image:image>
+  </url>
+
+  <!-- Toxic Workplace Tool -->
+  <url>
+    <loc>https://humanlens.club/?tool=toxic</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://humanlens.club/img/toxic.jpg</image:loc>
+      <image:title>Toxic Workplace Detector — Is My Job Toxic?</image:title>
+    </image:image>
+  </url>
+
+  <!-- Pricing -->
+  <url>
+    <loc>https://humanlens.club/#pricing</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://humanlens.club/#faq</loc>
+    <lastmod>2026-03-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

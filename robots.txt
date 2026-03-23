@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://humanlens.club/sitemap.xml
+
+# Crawl-delay for polite bots
+Crawl-delay: 10
+
+# Disallow API endpoints from indexing
+Disallow: /api/
