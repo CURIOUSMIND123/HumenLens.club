@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI This Week — Real AI News in Plain English | HumanLens</title>
+<meta name="description" content="AI news rewritten for real people. No jargon. No hype. Just what changed in AI this week, what it means for your life, and what you should actually do about it. Updated every Friday.">
+<meta name="keywords" content="AI news explained simply, latest AI news 2026, AI for beginners, what happened in AI this week, artificial intelligence news plain english">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://humanlens.club/news/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://humanlens.club/news/">
+<meta property="og:title" content="AI This Week — Real AI News in Plain English">
+<meta property="og:description" content="AI news every Friday, rewritten for real people. No jargon, no hype — just what it means for your life.">
+<meta property="og:image" content="https://humanlens.club/img/hero.jpg">
+<meta property="og:site_name" content="HumanLens">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": "AI This Week by HumanLens",
+  "description": "Weekly AI news rewritten in plain English for people who want to understand the world, not study computer science.",
+  "url": "https://humanlens.club/news/",
+  "publisher": {"@type": "Organization", "name": "HumanLens", "url": "https://humanlens.club"},
+  "inLanguage": "en"
+}
+</script>
+<style>
+/* ── Reset & Base ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:17px}
+body{background:#05050D;color:#e0e0e0;font-family:'JetBrains Mono',monospace;line-height:1.75;min-height:100vh;overflow-x:hidden}
+a{color:#00E5A0;text-decoration:none;transition:color .2s}
+a:hover{color:#fff}
+img{max-width:100%;height:auto;display:block}
+::selection{background:rgba(0,229,160,.25);color:#fff}
+
+/* ── Animated Mesh Background ── */
+body::before{
+  content:'';position:fixed;top:0;left:0;right:0;bottom:0;z-index:-2;
+  background:
+    radial-gradient(ellipse 90% 70% at 5% 5%,rgba(255,51,85,.07) 0%,transparent 55%),
+    radial-gradient(ellipse 60% 60% at 95% 15%,rgba(59,130,246,.06) 0%,transparent 55%),
+    radial-gradient(ellipse 80% 60% at 50% 100%,rgba(0,229,160,.05) 0%,transparent 55%),
+    radial-gradient(ellipse 50% 50% at 80% 60%,rgba(204,68,255,.04) 0%,transparent 55%);
+  animation:bgShift 20s ease-in-out infinite alternate;
+}
+@keyframes bgShift{
+  0%{background-position:0% 0%}
+  100%{background-position:100% 100%}
+}
+/* Grain overlay */
+body::after{
+  content:'';position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events:none;opacity:.4;
+}
+
+/* ── Ticker ── */
+.ticker-wrap{
+  position:fixed;top:0;left:0;width:100%;z-index:999;
+  background:linear-gradient(90deg,#FF3355,#CC44FF,#3B82F6,#00E5A0,#FFD60A);
+  background-size:300% 100%;animation:rainbowSlide 6s linear infinite;
+  padding:6px 0;overflow:hidden;
+}
+@keyframes rainbowSlide{0%{background-position:0% 50%}100%{background-position:300% 50%}}
+.ticker-inner{display:flex;align-items:center;white-space:nowrap;animation:tickerMove 30s linear infinite}
+@keyframes tickerMove{0%{transform:translateX(100vw)}100%{transform:translateX(-100%)}}
+.ticker-inner span{font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;color:#05050D;letter-spacing:.06em;padding:0 40px}
+
+/* ── Nav ── */
+.nav{
+  position:fixed;top:28px;left:0;width:100%;z-index:998;
+  padding:14px 40px;display:flex;align-items:center;justify-content:space-between;
+  background:rgba(5,5,13,.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.nav-logo{font-family:'Syne',sans-serif;font-weight:900;font-size:19px;color:#fff;display:flex;align-items:center;gap:10px;letter-spacing:-.03em}
+.nav-logo-dot{width:8px;height:8px;background:#00E5A0;border-radius:50%;animation:pulse 2s ease infinite}
+@keyframes pulse{0%,100%{opacity:1;box-shadow:0 0 6px #00E5A0}50%{opacity:.5;box-shadow:0 0 14px #00E5A0}}
+.nav-badge{font-size:.65rem;font-weight:700;letter-spacing:.14em;background:rgba(255,51,85,.15);color:#FF3355;border:1px solid rgba(255,51,85,.3);padding:3px 8px;border-radius:4px;font-family:'JetBrains Mono',monospace}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.5);transition:color .2s}
+.nav-links a:hover{color:#fff}
+.nav-cta{background:rgba(0,229,160,.1);color:#00E5A0 !important;border:1px solid rgba(0,229,160,.25);padding:7px 18px;border-radius:8px;font-weight:700}
+.nav-cta:hover{background:rgba(0,229,160,.2) !important}
+
+/* ── Hero ── */
+.hero{
+  padding:140px 40px 60px;text-align:center;position:relative;
+  max-width:900px;margin:0 auto;
+}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:'JetBrains Mono',monospace;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  background:rgba(0,229,160,.1);border:1px solid rgba(0,229,160,.25);color:#00E5A0;
+  padding:6px 16px;border-radius:100px;margin-bottom:24px;
+}
+.hero-eyebrow-dot{width:6px;height:6px;background:#00E5A0;border-radius:50%;animation:pulse 1.5s ease infinite}
+.hero h1{
+  font-family:'Syne',sans-serif;font-size:clamp(2.8rem,7vw,5.5rem);font-weight:900;
+  color:#fff;line-height:1.05;letter-spacing:-.04em;margin-bottom:20px;
+}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#FF3355,#CC44FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,.55);max-width:580px;margin:0 auto 32px;line-height:1.7}
+.hero-meta{display:flex;align-items:center;justify-content:center;gap:24px;font-size:.75rem;color:rgba(255,255,255,.35);font-family:'JetBrains Mono',monospace}
+.hero-meta-item{display:flex;align-items:center;gap:6px}
+.hero-meta-item::before{content:'';width:6px;height:6px;border-radius:50%;background:currentColor;flex-shrink:0}
+
+/* ── Filter Bar ── */
+.filter-bar{
+  display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;
+  padding:0 40px 40px;
+}
+.filter-btn{
+  font-family:'JetBrains Mono',monospace;font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:7px 18px;border-radius:100px;border:1px solid rgba(255,255,255,.12);
+  color:rgba(255,255,255,.5);background:transparent;cursor:pointer;transition:all .25s;
+}
+.filter-btn:hover,.filter-btn.active{border-color:rgba(255,255,255,.4);color:#fff;background:rgba(255,255,255,.06)}
+.filter-btn[data-cat="New Model"].active{border-color:rgba(0,229,160,.5);color:#00E5A0;background:rgba(0,229,160,.08)}
+.filter-btn[data-cat="AI Tools"].active{border-color:rgba(59,130,246,.5);color:#3B82F6;background:rgba(59,130,246,.08)}
+.filter-btn[data-cat="AI & Jobs"].active{border-color:rgba(255,214,10,.5);color:#FFD60A;background:rgba(255,214,10,.08)}
+.filter-btn[data-cat="Explained Simply"].active{border-color:rgba(204,68,255,.5);color:#CC44FF;background:rgba(204,68,255,.08)}
+.filter-btn[data-cat="AI & Society"].active{border-color:rgba(255,51,85,.5);color:#FF3355;background:rgba(255,51,85,.08)}
+
+/* ── Main Grid ── */
+.news-grid{
+  max-width:1200px;margin:0 auto;padding:0 30px 80px;
+  display:grid;grid-template-columns:repeat(12,1fr);gap:20px;
+}
+
+/* ── Featured Card ── */
+.card-featured{
+  grid-column:1/-1;
+  display:grid;grid-template-columns:1fr 420px;
+  background:#0D0D1A;border:1px solid rgba(255,255,255,.08);border-radius:20px;overflow:hidden;
+  transition:border-color .3s,transform .3s;cursor:pointer;
+  position:relative;
+}
+.card-featured:hover{border-color:rgba(0,229,160,.3);transform:translateY(-3px)}
+.card-featured-body{padding:40px;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.card-featured-visual{
+  position:relative;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;font-size:8rem;
+  background:linear-gradient(135deg,#001a12 0%,#022a20 100%);
+}
+.card-featured-visual::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(135deg,transparent 40%,rgba(0,229,160,.12) 100%);
+}
+.card-emoji-bg{position:relative;z-index:1;animation:float 6s ease-in-out infinite;filter:drop-shadow(0 0 40px rgba(0,229,160,.3))}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
+
+/* ── Regular Card ── */
+.card{
+  grid-column:span 6;
+  background:#0D0D1A;border:1px solid rgba(255,255,255,.07);border-radius:16px;overflow:hidden;
+  transition:border-color .3s,transform .3s;cursor:pointer;display:flex;flex-direction:column;
+}
+.card:hover{border-color:rgba(255,255,255,.2);transform:translateY(-4px)}
+.card-visual{
+  height:180px;display:flex;align-items:center;justify-content:center;font-size:5rem;
+  position:relative;overflow:hidden;flex-shrink:0;
+}
+.card-visual::before{content:'';position:absolute;inset:0;background:inherit;filter:brightness(.4)}
+.card-visual span{position:relative;z-index:1;animation:float 5s ease-in-out infinite;filter:drop-shadow(0 4px 20px rgba(255,255,255,.2))}
+.card-body{padding:24px;flex:1;display:flex;flex-direction:column;gap:12px}
+
+/* ── Card Shared ── */
+.cat-badge{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:'JetBrains Mono',monospace;font-size:.65rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  padding:4px 10px;border-radius:100px;background:rgba(255,255,255,.06);
+  width:fit-content;
+}
+.card-title{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:800;color:#fff;line-height:1.2;letter-spacing:-.02em}
+.card-featured-body .card-title{font-size:clamp(1.5rem,2.5vw,2rem)}
+.card-summary{font-size:.88rem;color:rgba(255,255,255,.55);line-height:1.7}
+.card-meta{display:flex;align-items:center;gap:14px;font-size:.72rem;color:rgba(255,255,255,.3);font-family:'JetBrains Mono',monospace;margin-top:auto}
+
+/* ── Expand: For You ── */
+.for-you-toggle{
+  display:flex;align-items:center;gap:8px;
+  font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;letter-spacing:.08em;
+  color:rgba(255,255,255,.5);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);
+  border-radius:8px;padding:8px 14px;cursor:pointer;transition:all .25s;width:100%;margin-top:8px;
+}
+.for-you-toggle:hover{background:rgba(255,255,255,.08);color:#fff}
+.for-you-toggle .arrow{margin-left:auto;transition:transform .3s}
+.for-you-panel{
+  display:none;background:rgba(0,229,160,.04);border:1px solid rgba(0,229,160,.15);
+  border-radius:10px;padding:18px;margin-top:10px;
+}
+.for-you-panel.open{display:block}
+.for-you-label{font-family:'JetBrains Mono',monospace;font-size:.65rem;font-weight:700;letter-spacing:.14em;color:#00E5A0;text-transform:uppercase;margin-bottom:10px}
+.for-you-text{font-size:.85rem;color:rgba(255,255,255,.7);line-height:1.7}
+.use-case-box{
+  background:rgba(255,255,255,.03);border-left:3px solid #FFD60A;
+  padding:12px 16px;border-radius:0 8px 8px 0;margin-top:12px;
+}
+.use-case-label{font-family:'JetBrains Mono',monospace;font-size:.6rem;font-weight:700;letter-spacing:.14em;color:#FFD60A;text-transform:uppercase;margin-bottom:6px}
+.use-case-text{font-size:.82rem;color:rgba(255,255,255,.6);line-height:1.6;font-style:italic}
+
+/* ── Ad Units ── */
+.ad-wrap{grid-column:1/-1;display:flex;justify-content:center;align-items:center;min-height:90px;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.07);border-radius:12px}
+.ad-label{font-family:'JetBrains Mono',monospace;font-size:.6rem;color:rgba(255,255,255,.2);letter-spacing:.1em;text-transform:uppercase;text-align:center;padding:8px}
+
+/* ── Newsletter ── */
+.newsletter{
+  max-width:700px;margin:0 auto 80px;padding:48px 40px;text-align:center;
+  background:linear-gradient(135deg,rgba(255,51,85,.06),rgba(204,68,255,.06));
+  border:1px solid rgba(255,255,255,.1);border-radius:24px;position:relative;overflow:hidden;
+}
+.newsletter::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle at center,rgba(204,68,255,.06) 0%,transparent 60%);pointer-events:none}
+.newsletter h2{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:900;color:#fff;margin-bottom:12px;letter-spacing:-.03em}
+.newsletter p{color:rgba(255,255,255,.5);font-size:.9rem;margin-bottom:24px}
+.newsletter-form{display:flex;gap:10px;max-width:460px;margin:0 auto}
+.newsletter-input{flex:1;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:12px 18px;color:#fff;font-family:'JetBrains Mono',monospace;font-size:.85rem;outline:none;transition:border-color .2s}
+.newsletter-input::placeholder{color:rgba(255,255,255,.3)}
+.newsletter-input:focus{border-color:rgba(204,68,255,.5)}
+.newsletter-btn{background:linear-gradient(135deg,#FF3355,#CC44FF);color:#fff;border:none;padding:12px 24px;border-radius:10px;font-family:'Syne',sans-serif;font-weight:800;font-size:.88rem;cursor:pointer;transition:transform .2s,opacity .2s;white-space:nowrap}
+.newsletter-btn:hover{opacity:.9;transform:scale(1.03)}
+
+/* ── About Banner ── */
+.about-banner{
+  max-width:1200px;margin:0 auto 60px;padding:0 30px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:16px;
+}
+.about-card{
+  background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);
+  border-radius:14px;padding:24px;text-align:center;
+}
+.about-icon{font-size:2rem;margin-bottom:10px}
+.about-title{font-family:'Syne',sans-serif;font-size:.95rem;font-weight:800;color:#fff;margin-bottom:6px}
+.about-desc{font-size:.78rem;color:rgba(255,255,255,.4);line-height:1.6}
+
+/* ── Footer ── */
+.footer{background:rgba(255,255,255,.015);border-top:1px solid rgba(255,255,255,.06);padding:40px;text-align:center;margin-top:20px}
+.footer-logo{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:900;color:#fff;margin-bottom:16px;display:block;letter-spacing:-.03em}
+.footer-links{display:flex;justify-content:center;gap:24px;margin-bottom:16px;flex-wrap:wrap}
+.footer-links a{font-size:.75rem;color:rgba(255,255,255,.3);transition:color .2s}
+.footer-links a:hover{color:#fff}
+.footer-copy{font-size:.72rem;color:rgba(255,255,255,.2)}
+
+/* ── Responsive ── */
+@media(max-width:900px){
+  .card-featured{grid-template-columns:1fr}
+  .card-featured-visual{height:200px;font-size:6rem}
+  .card{grid-column:1/-1}
+  .nav{padding:12px 20px}
+  .hero{padding:120px 20px 40px}
+  .news-grid{padding:0 16px 60px}
+  .about-banner{grid-template-columns:1fr 1fr;padding:0 16px}
+  .newsletter{margin:0 16px 60px;padding:32px 24px}
+  .newsletter-form{flex-direction:column}
+}
+@media(max-width:600px){
+  .card-featured-body{padding:24px}
+  .about-banner{grid-template-columns:1fr}
+  .hero h1{font-size:2.4rem}
+  .nav-links a:not(.nav-cta){display:none}
+  .ticker-wrap{display:none}
+  .nav{top:0}
+  .hero{padding-top:90px}
+}
+</style>
+</head>
+<body>
+
+<!-- Ticker -->
+<div class="ticker-wrap" aria-hidden="true">
+  <div class="ticker-inner">
+    <span>🤖 AI This Week — Updated Every Friday by HumanLens AI</span>
+    <span>📰 Plain English. No jargon. Real impact for real people.</span>
+    <span>🧠 This week: Claude 3.7 · ChatGPT Voice · EU AI Act · AI Agents Explained</span>
+    <span>🤖 AI This Week — Updated Every Friday by HumanLens AI</span>
+    <span>📰 Plain English. No jargon. Real impact for real people.</span>
+  </div>
+</div>
+
+<!-- Nav -->
+<nav class="nav">
+  <a href="/" class="nav-logo">
+    <span class="nav-logo-dot"></span>
+    HumanLens
+    <span class="nav-badge">AI NEWS</span>
+  </a>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/career/">Career Tool</a>
+    <a href="/#tools" class="nav-cta">Try AI Tools →</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-eyebrow">
+    <span class="hero-eyebrow-dot"></span>
+    Updated Every Friday · Edition #12
+  </div>
+  <h1>AI News,<br><em>Actually Explained</em></h1>
+  <p class="hero-sub">What happened in AI this week — rewritten for people who want to understand the world, not study computer science. Ages 10 to 35. No jargon.</p>
+  <div class="hero-meta">
+    <span class="hero-meta-item" id="heroWeek">Week of March 17–23, 2026</span>
+    <span class="hero-meta-item">5 stories</span>
+    <span class="hero-meta-item">Curated by Claude AI</span>
+  </div>
+</section>
+
+<!-- About cards -->
+<div class="about-banner">
+  <div class="about-card">
+    <div class="about-icon">🤖</div>
+    <div class="about-title">AI-Curated Weekly</div>
+    <div class="about-desc">Claude reads hundreds of sources, picks the 5 most important stories, and rewrites them for you</div>
+  </div>
+  <div class="about-card">
+    <div class="about-icon">🧒</div>
+    <div class="about-title">Ages 10–35</div>
+    <div class="about-desc">No PhD required. If you use a smartphone, you'll understand everything here</div>
+  </div>
+  <div class="about-card">
+    <div class="about-icon">💡</div>
+    <div class="about-title">"What It Means for You"</div>
+    <div class="about-desc">Every story includes a real-world use case and exactly how it affects your life</div>
+  </div>
+  <div class="about-card">
+    <div class="about-icon">📅</div>
+    <div class="about-title">Every Friday</div>
+    <div class="about-desc">New edition drops every Friday morning. Bookmark this page and check in weekly</div>
+  </div>
+</div>
+
+<!-- Category filter -->
+<div class="filter-bar">
+  <button class="filter-btn active" data-cat="all">All Stories</button>
+  <button class="filter-btn" data-cat="New Model">🧠 New Models</button>
+  <button class="filter-btn" data-cat="AI Tools">🛠️ AI Tools</button>
+  <button class="filter-btn" data-cat="AI & Jobs">💼 AI & Jobs</button>
+  <button class="filter-btn" data-cat="Explained Simply">💡 Explained Simply</button>
+  <button class="filter-btn" data-cat="AI & Society">⚖️ AI & Society</button>
+</div>
+
+<!-- News grid — populated by JS -->
+<main class="news-grid" id="newsGrid">
+  <div class="ad-wrap"><span class="ad-label">Loading stories...</span></div>
+</main>
+
+<!-- Newsletter -->
+<div class="newsletter">
+  <h2>Get It in Your Inbox Every Friday</h2>
+  <p>5 AI stories. Plain English. Takes 5 minutes to read. Free forever.</p>
+  <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+    <input type="email" class="newsletter-input" placeholder="your@email.com" required>
+    <button type="submit" class="newsletter-btn">Subscribe Free →</button>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <a href="/" class="footer-logo">HumanLens</a>
+  <div class="footer-links">
+    <a href="/">Home</a>
+    <a href="/blog/">Blog</a>
+    <a href="/career/">Career Tool</a>
+    <a href="/#tools">AI Life Tools</a>
+    <a href="/#pricing">Pricing</a>
+  </div>
+  <p class="footer-copy">&copy; 2026 HumanLens · AI news curated and rewritten by Claude AI every Friday · <a href="/">humanlens.club</a></p>
+</footer>
+
+<!-- Data -->
+<script src="/news/data.js"></script>
+
+<script>
+// ── Render news ──
+function renderNews(articles){
+  const grid = document.getElementById('newsGrid');
+  grid.innerHTML = '';
+
+  if(window.NEWS_META){
+    document.getElementById('heroWeek').textContent = 'Week of ' + window.NEWS_META.week;
+    document.querySelector('.hero-eyebrow').innerHTML = '<span class="hero-eyebrow-dot"></span>Updated Every Friday · Edition #' + window.NEWS_META.edition;
+  }
+
+  articles.forEach((a, i) => {
+    if(i === 1){ // Ad between story 1 and 2
+      const adEl = document.createElement('div');
+      adEl.className = 'ad-wrap';
+      adEl.innerHTML = `<ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="9991111111" data-ad-format="horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>`;
+      grid.appendChild(adEl);
+    }
+    if(i === 3){ // Ad mid-page
+      const adEl2 = document.createElement('div');
+      adEl2.className = 'ad-wrap';
+      adEl2.style.gridColumn = '1/-1';
+      grid.appendChild(adEl2);
+    }
+
+    const el = document.createElement('div');
+    el.className = a.featured ? 'card-featured' : 'card';
+    el.dataset.cat = a.category;
+
+    const panelId = 'panel-' + a.id;
+
+    if(a.featured){
+      el.innerHTML = `
+        <div class="card-featured-body">
+          <div>
+            <span class="cat-badge" style="color:${a.categoryColor};border-color:${a.categoryColor}30;background:${a.categoryColor}12">${a.category}</span>
+            <h2 class="card-title" style="margin-top:14px">${a.title}</h2>
+            <p style="font-size:.88rem;color:rgba(255,255,255,.45);margin-top:8px;font-style:italic">${a.subtitle}</p>
+            <p class="card-summary" style="margin-top:16px">${a.summary}</p>
+          </div>
+          <div>
+            <button class="for-you-toggle" onclick="togglePanel('${panelId}',this)">
+              💡 What does this mean for me?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="for-you-panel" id="${panelId}">
+              <div class="for-you-label">What this means for you</div>
+              <div class="for-you-text">${a.forYou}</div>
+              <div class="use-case-box">
+                <div class="use-case-label">Real Use Case</div>
+                <div class="use-case-text">${a.useCase}</div>
+              </div>
+            </div>
+            <div class="card-meta" style="margin-top:12px">
+              <span>⏱ ${a.readTime} read</span>
+              <span>📰 ${a.source}</span>
+              <span style="margin-left:auto;color:${a.categoryColor}">${a.category}</span>
+            </div>
+          </div>
+        </div>
+        <div class="card-featured-visual" style="background:${a.gradient}">
+          <span class="card-emoji-bg" style="font-size:9rem">${a.emoji}</span>
+        </div>`;
+    } else {
+      el.innerHTML = `
+        <div class="card-visual" style="background:${a.gradient}">
+          <span>${a.emoji}</span>
+        </div>
+        <div class="card-body">
+          <span class="cat-badge" style="color:${a.categoryColor};border-color:${a.categoryColor}30;background:${a.categoryColor}12">${a.category}</span>
+          <h3 class="card-title" style="font-size:1.1rem">${a.title}</h3>
+          <p class="card-summary" style="font-size:.83rem">${a.summary.substring(0,180)}...</p>
+          <button class="for-you-toggle" onclick="togglePanel('${panelId}',this)" style="font-size:.68rem">
+            💡 What this means for me
+            <span class="arrow">▼</span>
+          </button>
+          <div class="for-you-panel" id="${panelId}">
+            <div class="for-you-label">What this means for you</div>
+            <div class="for-you-text" style="font-size:.82rem">${a.forYou}</div>
+            <div class="use-case-box">
+              <div class="use-case-label">Real Use Case</div>
+              <div class="use-case-text" style="font-size:.8rem">${a.useCase}</div>
+            </div>
+          </div>
+          <div class="card-meta">
+            <span>⏱ ${a.readTime}</span>
+            <span>📰 ${a.source}</span>
+          </div>
+        </div>`;
+    }
+    grid.appendChild(el);
+  });
+
+  // Final ad
+  const finalAd = document.createElement('div');
+  finalAd.className = 'ad-wrap';
+  finalAd.style.gridColumn = '1/-1';
+  finalAd.innerHTML = `<ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="9991111112" data-ad-format="horizontal" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});<\/script>`;
+  grid.appendChild(finalAd);
+}
+
+function togglePanel(id, btn){
+  const panel = document.getElementById(id);
+  const arrow = btn.querySelector('.arrow');
+  panel.classList.toggle('open');
+  arrow.style.transform = panel.classList.contains('open') ? 'rotate(180deg)' : '';
+}
+
+// ── Filter ──
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const cat = btn.dataset.cat;
+    document.querySelectorAll('#newsGrid .card, #newsGrid .card-featured').forEach(card => {
+      if(cat === 'all' || card.dataset.cat === cat){
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// ── Newsletter ──
+function handleNewsletter(e){
+  e.preventDefault();
+  const input = e.target.querySelector('input');
+  const btn = e.target.querySelector('button');
+  btn.textContent = '✓ Subscribed!';
+  btn.style.background = '#00E5A0';
+  btn.style.color = '#05050D';
+  input.value = '';
+  setTimeout(() => {
+    btn.textContent = 'Subscribe Free →';
+    btn.style.background = '';
+    btn.style.color = '';
+  }, 3000);
+}
+
+// ── Init ──
+if(window.NEWS_DATA){
+  renderNews(window.NEWS_DATA);
+} else {
+  document.getElementById('newsGrid').innerHTML = '<div class="ad-wrap"><span class="ad-label">News loading...</span></div>';
+}
+</script>
+</body>
+</html>
